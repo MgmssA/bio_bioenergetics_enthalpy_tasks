@@ -1,0 +1,88 @@
+## Stufe III
+
+### Unterschied Enthalpie-innere Energie
+
+Bei einer Verbrennung von Glucose unter freiem Himmel und bei konstantem Druck $p = 101325\;\pascal$ entsteht ein Liter $1\,\liter$ des Gases $\ce{CO2}$. 
+
+a. Was ist dabei der Unterschied zwischen der Abnahme der Enthalpie und der inneren Energie? 
+#. Vergleiche das mit der dabei enstandenen Enthalpieänderung von $\Delta H \approx -21\,\kilojoule$; zum Beispiel als Prozentwert.
+#. Welcher Reaktionstyp liegt hier vor? Warum?
+#. Wo geht die Differenz dieser beiden Energien hin?
+#. Berechne wie die Änderung der inneren Energie gewesen sein muss, damit dieser Unterschied herauskommt?
+
+```{r}
+#| output: false
+points <- 13
+max_points <- 13
+total_points <- total_points + points
+level_3_points <- points * level_3_multiplier
+level_3_max_points <- max_points * level_3_multiplier
+level_3_total_points <- level_3_total_points + level_3_points 
+``` 
+
+[[Du kannst `{r} level_3_points` Punkte von `{r} level_3_max_points` möglichen Aufgabenpunkten bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben. Ergebnis: a. $101\,\kilojoule$, b. $0.5\,\%$, c. und d. Das musst Du herausfinden.]]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Die passende Gleichung mit der Unbekannten ist:
+$$
+\underbrace{\Delta H - \Delta U}_{\mathrm{?}\star} = p \Delta V.\;\star
+$$
+Ein Liter eines Gases entspricht einem Volumen von $0.001\,\cubicmeter$. Da das Gas durch die Reaktion erst gebildet worden ist, ist die Volumenänderung
+$$
+\Delta V = V\sub{Ende} - V\sub{Anfang} = 0.001\,\cubicmeter - 0\,\cubicmeter = 0.001\,\cubicmeter.\;\star\star
+$$
+Der Unterschied zwischen Enthalpie und innerer Energie ist
+$$
+\Delta H - \Delta U = p \Delta V = 101325\,\pascal \cdot 0.001\,\cubicmeter \approx 101\,\joule.\;\star\star
+$$
+Dieser Unterschied macht etwa
+$$
+\frac{\Delta H - \Delta U}{\Delta H} \cdot 100 = \frac{101\,\joule}{21000\,\joule} \cdot 100 = 0.005 \cdot 100 = 0.5\%.\;\star\star
+$$
+Es handelt sich um eine exergone Reaktion\*. Der Unterschied wird zur Expansionsarbeit genutzt\*. Um die Änderung der inneren Energie zu berechnen stellst Du die ursprüngliche Gleichung so um:
+$$
+\underbrace{\Delta U}_{?\star} = \Delta H - p \Delta V = -21000\,\joule - 101\,\joule = -21101\,\joule.\;\star\star
+$$
+]{fg="green-shade-3"}
+:::
+
+### Finde die ursprüngliche Temperatur heraus
+
+Du hast eben $m = 23\,\gram$ Wasser erwärmt und die Endtemperatur ist $T\sub{Ende} = 343\,\kelvin$. Die aufgewendete Energie ist $\Delta H^{\circ} = 4347\,\kilojoule$. Die spezifische Wärmekapazität von Wasser $C_{p,m} = 4200\;\kilojouleperkilogramperkelvin$. 
+
+#. Was war die ursprüngliche Temperatur des Wassers? 
+#. Welcher Reaktionstyp liegt hier vor? Warum?
+#. Woher kommt die benötigte Energie?
+
+```{r}
+#| output: false
+points <- 6
+max_points <- points
+total_points <- total_points + points
+level_3_points <- points * level_3_multiplier
+level_3_max_points <- max_points * level_3_multiplier
+level_3_total_points <- level_3_total_points + level_3_points
+``` 
+
+[Du kannst `{r} level_2_points` Punkte von `{r} level_2_max_points` möglichen Aufgabenpunkten bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben. Ergebnis: 1. $63\,\kilojoule$, 2. und 3. musst Du selbst herausfinden.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Die passende Gleichung mit der Unbekannten ist:
+$$
+\Delta H^{\circ} = m C_{p,m} \Delta T = m C_{p,m} \left( T\sub{Ende} - \underbrace{T\sub{Anfang}}_{?\star} \right).\;\star
+$$
+Umstellen der Gleichung ergibt
+$$
+\frac{\Delta H^{\circ}}{ m C_{p,m}} = T\sub{Ende} - T\sub{Anfang},
+$$
+und weiteres Umstellen nach $T\sub{Anfang}$ führt zu
+$$
+T\sub{Anfang} = T\sub{Ende} - \frac{\Delta H^{\circ}}{ m C_{p,m}}.
+$$
+Einsetzen ergibt
+$$
+T\sub{Anfang} = 343\,\kelvin - \frac{4347\,\kilojoule}{ 0.023\,\kilogram \cdot 4200\,\kilojouleperkilogramperkelvin} = 343\,\kelvin - 45\,\kelvin = 298\,\kelvin.\;\star\star
+$$
+Es handelt sich um eine endergone Reaktion\*. Die Energie kommt aus der Umgebung, wo es kälter wird.\*.]{fg="green-shade-3"}
+:::
+

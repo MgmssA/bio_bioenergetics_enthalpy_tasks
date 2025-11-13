@@ -1,0 +1,187 @@
+## Stufe II
+
+### Heben von einer Masse
+
+Du hebst eine Masse von $m = 1\,\kilogram$ um $h = 10\,\meter$. Welche Energie brauchst Du, um dies zu bewältigen? Rechne mit der Erdbeschleunigung $g = 10\,\newtonperkilogram$. Wem geht diese Energie verloren?
+
+```{r}
+#| output: false
+points <- 5
+max_points <- points
+total_points <- total_points + points
+level_2_points <- points * level_2_multiplier
+level_2_max_points <- max_points * level_2_multiplier
+level_2_total_points <- level_2_total_points + level_2_points
+``` 
+
+[[Du kannst `{r} level_2_points` Punkte von `{r} level_2_max_points` möglichen Aufgabenpunkten bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben. Ergebnis: $100\,\joule$.]]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Die Gleichung zur Berechnung is
+$$
+\underbrace{W}_{?\star} = -F_g \Delta s = -m g \Delta h\;\star
+$$
+Daraus wird die Arbeit ermittelt nach:
+$$
+W = -F_g \Delta s = -m g \Delta h = 1\,\kilogram \cdot 10\,\newtonperkilogram \cdot 10\,\meter = -100\,\joule.\;\star\star
+$$
+Die Energie geht Dir verloren, dem System; also ist die Arbeit negativ\*.]{fg="green-shade-3"}
+:::
+
+### Schmelzen einer Menge Wasser I
+
+Du möchtest einen Kilogramm Wassereis bei $25\,\celsius$ komplett zu flüssigem Wasser schmelzen. Die Standardschmelzenthalpie von Wasser beträgt $\Delta H^{\circ}_m = 333.55\;\kilojouleperkilogram$ 
+
+#. Welche Enthalpieänderung ist notwendig? 
+#. Welcher Reaktionstyp liegt hier vor? Warum?
+#. Woher kommt die benötigte Energie?
+
+```{r}
+#| output: false
+points <- 6
+max_points <- points
+total_points <- total_points + points
+level_2_points <- points * level_2_multiplier
+level_2_max_points <- max_points * level_2_multiplier
+level_2_total_points <- level_2_total_points + level_2_points
+``` 
+
+[Du kannst `{r} level_2_points` Punkte von `{r} level_2_max_points` möglichen Aufgabenpunkten bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben. Ergebnis: 1. $333.55\,\kilojoule$, 2. und 3. musst Du selbst herausfinden.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Die passende Gleichung mit der Unbekannten ist:
+$$
+\underbrace{\Delta H^{\circ}}_{?\star} = m \Delta H^{\circ}_m.\;\star
+$$
+Das Schmelzen eines Kilogramms Wasser erzeugt eine Enthalpieänderung 
+$$
+\Delta H^{\circ} = 1\,\kilogram \cdot 333.55\,\kilojouleperkilogram = 333.55\,\kilojoule.\;\star\star
+$$
+Es handelt sich um eine endergone Reaktion\*. Die Energie kommt aus der Umgebung, wo es kälter wird.\*.]{fg="green-shade-3"}
+:::
+
+### Schmelzen einer Menge Wasser II
+
+Du möchtest zehn Gramm Wassereis bei $25\,\celsius$ komplett zu flüssigem Wasser schmelzen. Die spezifische Standardschmelzenthalpie von Wasser beträgt $\Delta H^{\circ}_m = 333.55\;\kilojouleperkilogram$. Welche Enthalpieänderung ist notwendig? 
+
+```{r}
+#| output: false
+points <- 4
+max_points <- points
+total_points <- total_points + points
+level_2_points <- points * level_2_multiplier
+level_2_max_points <- max_points * level_2_multiplier
+level_2_total_points <- level_2_total_points + level_2_points
+``` 
+
+[Du kannst `{r} level_2_points` Punkte von `{r} level_2_max_points` möglichen Aufgabenpunkten bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben. Ergebnis: 1. $3.33\,\kilojoule$.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Die passende Gleichung mit der Unbekannten ist:
+$$
+\underbrace{\Delta H^{\circ}}_{?\star} = m \Delta H^{\circ}_m.\;\star
+$$
+Das Schmelzen erzeugt eine Enthalpieänderung 
+$$
+\Delta H^{\circ} = 0.01\,\kilogram \cdot 333.55\,\kilojouleperkilogram = 3.33\,\kilojoule.\;\star\star
+$$
+]{fg="green-shade-3"}
+:::
+
+### Verdampfen einer Menge Wasser
+
+Du möchtest $m = 8\,\gram$ Wasser bei $25\,\celsius$ komplett in Dampf überführen. Die spezifische Standardschmelzenthalpie zum Verdampfen von Wasser beträgt $\Delta H^{\circ}_m = 2257\;\kilojouleperkilogram$ 
+
+#. Welche Enthalpieänderung ist notwendig? 
+#. Welcher Reaktionstyp liegt hier vor? Warum?
+#. Woher kommt die benötigte Energie?
+
+```{r}
+#| output: false
+points <- 6
+max_points <- points
+total_points <- total_points + points
+level_2_points <- points * level_2_multiplier
+level_2_max_points <- max_points * level_2_multiplier
+level_2_total_points <- level_2_total_points + level_2_points
+``` 
+
+[Du kannst `{r} level_2_points` Punkte von `{r} level_2_max_points` möglichen Aufgabenpunkten bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben. Ergebnis: 1. $18\,\kilojoule$, 2. und 3. musst Du selbst herausfinden.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Die passende Gleichung mit der Unbekannten ist:
+$$
+\underbrace{\Delta H^{\circ}}_{?\star} = m \Delta H^{\circ}_m.\;\star
+$$
+Das Schmelzen eines Kilogramms Wasser erzeugt eine Enthalpieänderung 
+$$
+\Delta H^{\circ} = 0.008\,\kilogram \cdot 2257\,\kilojouleperkilogram = 18\,\kilojoule.\;\star\star
+$$
+Es handelt sich um eine endergone Reaktion\*. Die Energie kommt aus der Umgebung, wo es kälter wird.\*.]{fg="green-shade-3"}
+:::
+
+### Erwärmen von Wasser
+
+Du möchtest $m = 15\,\gram$ Wasser bei $25\,\celsius$ um einen Grad erwärmen. Die spezifische Wärmekapazität von Wasser $C_{p,m} = 4200\;\kilojouleperkilogramperkelvin$. 
+
+#. Welche Enthalpieänderung ist notwendig? 
+#. Welcher Reaktionstyp liegt hier vor? Warum?
+#. Woher kommt die benötigte Energie?
+
+```{r}
+#| output: false
+points <- 6
+max_points <- points
+total_points <- total_points + points
+level_2_points <- points * level_2_multiplier
+level_2_max_points <- max_points * level_2_multiplier
+level_2_total_points <- level_2_total_points + level_2_points
+``` 
+
+[Du kannst `{r} level_2_points` Punkte von `{r} level_2_max_points` möglichen Aufgabenpunkten bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben. Ergebnis: 1. $63\,\kilojoule$, 2. und 3. musst Du selbst herausfinden.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Die passende Gleichung mit der Unbekannten ist:
+$$
+\underbrace{\Delta H^{\circ}}_{?\star} = m C_{p,m} \Delta T.\;\star
+$$
+Das Erwärmen benötigt eine Enthalpieänderung 
+$$
+\Delta H^{\circ} = 0.015\,\kilogram \cdot 4200\,\kilojouleperkilogramperkelvin \cdot 1\,\kelvin = 63\,\kilojoule.\;\star\star
+$$
+Es handelt sich um eine endergone Reaktion\*. Die Energie kommt aus der Umgebung, wo es kälter wird.\*.]{fg="green-shade-3"}
+:::
+
+### Abkühlen von Wasser
+
+Du möchtest $m = 9\,\gram$ Wasser bei $25\,\celsius$ um einen Grad kühlen. Die spezifische Wärmekapazität von Wasser $C_{p,m} = 4200\;\kilojouleperkilogramperkelvin$. 
+
+#. Welche Enthalpieänderung ist notwendig? 
+#. Welcher Reaktionstyp liegt hier vor? Warum?
+#. Woher kommt die benötigte Energie?
+
+```{r}
+#| output: false
+points <- 6
+max_points <- points
+total_points <- total_points + points
+level_2_points <- points * level_2_multiplier
+level_2_max_points <- max_points * level_2_multiplier
+level_2_total_points <- level_2_total_points + level_2_points
+``` 
+
+[Du kannst `{r} level_2_points` Punkte von `{r} level_2_max_points` möglichen Aufgabenpunkten bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben. Ergebnis: 1. $-38\,\kilojoule$, 2. und 3. musst Du selbst herausfinden.]{fg="purple"}
+
+::: {.content-hidden unless-meta="show-rating"}
+[Die passende Gleichung mit der Unbekannten ist:
+$$
+\underbrace{\Delta H^{\circ}}_{?\star} = m C_{p,m} \Delta T.\;\star
+$$
+Das Erwärmen benötigt eine Enthalpieänderung 
+$$
+\Delta H^{\circ} = 0.009\,\kilogram \cdot 4200\,\kilojouleperkilogramperkelvin \cdot -1\,\kelvin = -38\,\kilojoule.\;\star\star
+$$
+Es handelt sich um eine exergone Reaktion\*. Die Energie wird aus dem System gezogen und geht dem System verloren. Die abgezogene Energie erwärmt die Umgebung.\*.]{fg="green-shade-3"}
+:::
+
+

@@ -57,7 +57,7 @@ Das Schmelzen eines Kilogramms Wasser erzeugt eine Enthalpieänderung
 $$
 \Delta H^{\circ} = 1\,\kilogram \cdot 333.55\,\kilojouleperkilogram = 333.55\,\kilojoule.\;\star\star
 $$
-Es handelt sich um eine endergone Reaktion\*. Die Energie kommt aus der Umgebung, wo es kälter wird.\*.]{fg="green-shade-3"}
+Es handelt sich um eine endotherme Reaktion\*. Die Energie kommt aus der Umgebung, wo es kälter wird.\*.]{fg="green-shade-3"}
 :::
 
 ### Schmelzen einer Menge Wasser II
@@ -117,7 +117,7 @@ Das Schmelzen eines Kilogramms Wasser erzeugt eine Enthalpieänderung
 $$
 \Delta H^{\circ} = 0.008\,\kilogram \cdot 2257\,\kilojouleperkilogram = 18\,\kilojoule.\;\star\star
 $$
-Es handelt sich um eine endergone Reaktion\*. Die Energie kommt aus der Umgebung, wo es kälter wird.\*.]{fg="green-shade-3"}
+Es handelt sich um eine endotherme Reaktion\*. Die Energie kommt aus der Umgebung, wo es kälter wird.\*.]{fg="green-shade-3"}
 :::
 
 ### Erwärmen von Wasser
@@ -149,7 +149,7 @@ Das Erwärmen benötigt eine Enthalpieänderung
 $$
 \Delta H^{\circ} = 0.015\,\kilogram \cdot 4200\,\kilojouleperkilogramperkelvin \cdot 1\,\kelvin = 63\,\kilojoule.\;\star\star
 $$
-Es handelt sich um eine endergone Reaktion\*. Die Energie kommt aus der Umgebung, wo es kälter wird.\*.]{fg="green-shade-3"}
+Es handelt sich um eine endotherme Reaktion\*. Die Energie kommt aus der Umgebung, wo es kälter wird.\*.]{fg="green-shade-3"}
 :::
 
 ### Abkühlen von Wasser
@@ -181,7 +181,7 @@ Das Erwärmen benötigt eine Enthalpieänderung
 $$
 \Delta H^{\circ} = 0.009\,\kilogram \cdot 4200\,\kilojouleperkilogramperkelvin \cdot -1\,\kelvin = -38\,\kilojoule.\;\star\star
 $$
-Es handelt sich um eine exergone Reaktion\*. Die Energie wird aus dem System gezogen und geht dem System verloren. Die abgezogene Energie erwärmt die Umgebung.\*.]{fg="green-shade-3"}
+Es handelt sich um eine exotherme Reaktion\*. Die Energie wird aus dem System gezogen und geht dem System verloren. Die abgezogene Energie erwärmt die Umgebung.\*.]{fg="green-shade-3"}
 :::
 
 

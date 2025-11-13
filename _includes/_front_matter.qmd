@@ -16,5 +16,5 @@ format:
         self-contained-math: false
 filters:
   - highlight-text
-show-rating: true
+show-rating: false
 ---

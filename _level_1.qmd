@@ -153,7 +153,7 @@ Wie unterscheidet sich die Änderung der Enthalpie von der Änderung der inneren
 ```{r}
 #| output: false
 points <- 5
-max_points <- 8
+max_points <- 6
 total_points <- total_points + points
 level_1_points <- points * level_1_multiplier
 level_1_max_points <- max_points * level_1_multiplier
@@ -167,7 +167,7 @@ level_1_total_points <- level_1_total_points + level_1_points
 $$
 \Delta H - \Delta U = p \Delta V.\;\star
 $$
-Der Unterschied ist eine Expansionsarbeit oder Volumenarbeit\*\*\*. Das bedeutet, dass ein Teil der Energie, die mit der Umgebung ausgetauscht wird, nicht in die innere Energie hinein gesteckt wird\*, oder aus ihr heraus kommt\*. Dieser Teil geht entweder in die Umgebung zurück\* oder kommt aus der Umgebung\*. Die Änderung der Enthalpie unterscheidet sich stark von der Änderung der inneren Energie, wenn Gase gebildet oder verbraucht werden\*.]{fg="green-shade-3"}
+Der Unterschied ist eine Expansionsarbeit oder Volumenarbeit\*. Das bedeutet, dass ein Teil der Energie, die mit der Umgebung ausgetauscht wird, nicht in die innere Energie hinein gesteckt wird\*, oder aus ihr heraus kommt\*. Dieser Teil geht entweder in die Umgebung zurück\* oder kommt aus der Umgebung\*. Die Änderung der Enthalpie unterscheidet sich stark von der Änderung der inneren Energie, wenn Gase gebildet oder verbraucht werden\*.]{fg="green-shade-3"}
 :::
 
 ### Die Größe der Enthalpie bei konstantem Druck

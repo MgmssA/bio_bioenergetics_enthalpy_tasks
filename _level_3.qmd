@@ -39,7 +39,7 @@ Dieser Unterschied macht etwa
 $$
 \frac{\Delta H - \Delta U}{\Delta H} \cdot 100 = \frac{101\,\joule}{21000\,\joule} \cdot 100 = 0.005 \cdot 100 = 0.5\%.\;\star\star
 $$
-Es handelt sich um eine exergone Reaktion\*. Der Unterschied wird zur Expansionsarbeit genutzt\*. Um die Änderung der inneren Energie zu berechnen stellst Du die ursprüngliche Gleichung so um:
+Es handelt sich um eine exotherme Reaktion\*. Der Unterschied wird zur Expansionsarbeit genutzt\*. Um die Änderung der inneren Energie zu berechnen stellst Du die ursprüngliche Gleichung so um:
 $$
 \underbrace{\Delta U}_{?\star} = \Delta H - p \Delta V = -21000\,\joule - 101\,\joule = -21101\,\joule.\;\star\star
 $$
@@ -64,7 +64,7 @@ level_3_max_points <- max_points * level_3_multiplier
 level_3_total_points <- level_3_total_points + level_3_points
 ``` 
 
-[Du kannst `{r} level_2_points` Punkte von `{r} level_2_max_points` möglichen Aufgabenpunkten bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben. Ergebnis: 1. $63\,\kilojoule$, 2. und 3. musst Du selbst herausfinden.]{fg="purple"}
+[Du kannst `{r} level_2_points` Punkte von `{r} level_2_max_points` möglichen Aufgabenpunkten bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben. Ergebnis: 1. $298\,\kelvin$, 2. und 3. musst Du selbst herausfinden.]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
 [Die passende Gleichung mit der Unbekannten ist:
@@ -83,6 +83,6 @@ Einsetzen ergibt
 $$
 T\sub{Anfang} = 343\,\kelvin - \frac{4347\,\kilojoule}{ 0.023\,\kilogram \cdot 4200\,\kilojouleperkilogramperkelvin} = 343\,\kelvin - 45\,\kelvin = 298\,\kelvin.\;\star\star
 $$
-Es handelt sich um eine endergone Reaktion\*. Die Energie kommt aus der Umgebung, wo es kälter wird.\*.]{fg="green-shade-3"}
+Es handelt sich um eine endotherme Reaktion\*. Die Energie kommt aus der Umgebung, wo es kälter wird.\*.]{fg="green-shade-3"}
 :::
 

@@ -33,7 +33,7 @@ Bevor Du loslegst, rufe Dir die [Anforderungen](https://mgmssa.github.io/bio_exp
 
 ## Punkte
 
-Es gibt insgesamt `{r} total_points` Punkte. In  den einzelnen Stufen erreichst Du höchstens:
+Es gibt insgesamt `{r} total_points` Punkte. Inn  den einzelnen Stufen erreichst Du höchstens:
 
 - Stufe I: `{r} level_1_total_points` Punkte
 - Stufe II: `{r} level_2_total_points` Punkte

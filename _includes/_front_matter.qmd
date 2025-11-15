@@ -14,7 +14,8 @@ format:
         # include-after-body: _includes/_after_body.html
         embed-resources: false
         self-contained-math: false
+has-math: true
+show-rating: true
 filters:
   - highlight-text
-show-rating: false
 ---

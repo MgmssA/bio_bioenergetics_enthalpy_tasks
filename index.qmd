@@ -2,41 +2,12 @@
 {{< include _includes/_init_fontawesome.qmd >}} 
 {{< include _includes/_katex_macros.qmd >}} 
 {{< include _includes/_r_themes.qmd >}}
-
-```{r}
-#| output: false
-
-points <- 0
-max_points <- 0
-level_1_points <- 0
-level_2_points <- 0
-level_3_points <- 0
-level_1_max_points <- 0
-level_2_max_points <- 0
-level_3_max_points <- 0
-level_1_total_points <- 0
-level_2_total_points <- 0
-level_3_total_points <- 0
-total_points <- 0
-level_1_multiplier <- 1
-level_2_multiplier <- 2
-level_3_multiplier <- 3
-```
-
-## Arbeitsaufträge {.unnumbered}
-
-Bevor Du loslegst, rufe Dir die [Anforderungen](https://mgmssa.github.io/bio_expectations_and_requirements/) für Biologieaufgaben in Stufe 10 ins Gedächtnis. Reiche die Antworten als digitales Dokument ein und verwende eine leserliche Schrift, falls Du ein handgeschriebenes Dokument einreichst. Stufe I ist auf E Niveau, Stufe II ist auf E/A Niveau, Stufe III ist komplett auf A Niveau angesiedelt. Die Gesamtpunktzahl berechnet sich aus allen Aufgaben ohne Multiplikatoren. Die Multiplikatoren sind **1** für Stufe I, **2** für Stufe II, und **3** für Stufe III.
+{{< include _includes/_r_rating_init.qmd >}}
 
 {{< include _level_1.qmd >}}
 {{< include _level_2.qmd >}}
 {{< include _level_3.qmd >}}
 
-## Punkte
-
-Es gibt insgesamt `{r} total_points` Punkte. Inn  den einzelnen Stufen erreichst Du höchstens:
-
-- Stufe I: `{r} level_1_total_points` Punkte
-- Stufe II: `{r} level_2_total_points` Punkte
-- Stufe III: `{r} level_3_total_points` Punkte
+{{< include _includes/_r_rating.qmd >}}
 
 

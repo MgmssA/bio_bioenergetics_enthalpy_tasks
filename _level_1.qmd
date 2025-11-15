@@ -12,7 +12,7 @@ level_1_max_points <- max_points * level_1_multiplier
 level_1_total_points <- level_1_total_points + level_1_points
 ``` 
 
-Wie kann die innere Energie eines Systems grundsätzlich geändert werden? Gib eine Gleichung dafür an und beschreibe die einzelnen Variablen mit ihren Einheiten. 
+Wie kann die innere Energie eines Systems grundsätzlich geändert werden? Gib eine Gleichung dafür an und benenne die einzelnen Variablen mit ihren Einheiten. 
 
 [[`{r} points` Punkte; Sieben von sieben möglichen Aussagen unter Einbeziehung von Fachsprache sind möglich.]]{fg="purple"}
 

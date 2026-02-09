@@ -4,7 +4,7 @@ title: |
     Bioenergetik - Enthalpie
 subtitle: 'Chemische Energie<br><small>Aufgaben</small>'
 date: 2025-11-11 
-date-modified: 2025-11-11
+date-modified: 2026-02-09
 author: Călin Aurel Drăgan
 # abstract: 'Abstract'
 # bibliography: references.bib

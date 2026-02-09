@@ -2,7 +2,7 @@
 
 ### Zuckerverbrennung
 
-Bei einer Verbrennung von Glucose unter freiem Himmel und bei konstantem Druck $p = 101325\;\pascal$ entsteht ein Liter $1\,\liter$ des Gases $\ce{CO2}$. Achte auf die Einheiten! 
+Bei einer Verbrennung von Glucose unter freiem Himmel und bei konstantem Druck $p = 101325\;\pascal$ entsteht ein Liter $1\,\liter$ des Gases $\ce{CO2}$. Du brauchst hier, keine Antwortsätze aufzuschreiben aber achte auf die Einheiten! 
 
 a. Was ist dabei der Unterschied zwischen der Abnahme der Enthalpie und der inneren Energie? 
 #. Vergleiche das mit der dabei enstandenen Enthalpieänderung von $\Delta H \approx -21\,\kilojoule$; zum Beispiel als Prozentwert.

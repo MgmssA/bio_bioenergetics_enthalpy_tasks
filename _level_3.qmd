@@ -1,6 +1,6 @@
 ## Stufe III
 
-### Unterschied Enthalpie-innere Energie
+### Zuckerverbrennung
 
 Bei einer Verbrennung von Glucose unter freiem Himmel und bei konstantem Druck $p = 101325\;\pascal$ entsteht ein Liter $1\,\liter$ des Gases $\ce{CO2}$. Achte auf die Einheiten! 
 
@@ -12,8 +12,8 @@ a. Was ist dabei der Unterschied zwischen der Abnahme der Enthalpie und der inne
 
 ```{r}
 #| output: false
-points <- 13
-max_points <- 13
+points <- 11
+max_points <- 11
 total_points <- total_points + points
 level_3_points <- points * level_3_multiplier
 level_3_max_points <- max_points * level_3_multiplier
@@ -25,7 +25,7 @@ level_3_total_points <- level_3_total_points + level_3_points
 ::: {.content-hidden unless-meta="show-rating"}
 [a. Die passende Gleichung mit der Unbekannten ist:
 $$
-\underbrace{\Delta H - \Delta U}_{\mathrm{?}\star} = p \Delta V.\;\star
+\Delta H - \Delta U = p \Delta V.\;\star
 $$
 Ein Liter eines Gases entspricht einem Volumen von $0.001\,\cubicmeter$. Da das Gas durch die Reaktion erst gebildet worden ist, ist die Volumenänderung
 $$
@@ -41,12 +41,12 @@ $$
 $$
 c. Es handelt sich um eine exotherme Reaktion\*. d. Der Unterschied wird zur Expansionsarbeit genutzt\*. e. Um die Änderung der inneren Energie zu berechnen stellst Du die ursprüngliche Gleichung so um:
 $$
-\underbrace{\Delta U}_{?\star} = \Delta H - p \Delta V = -21000\,\joule - 101\,\joule = -21101\,\joule.\;\star\star
+\Delta U = \Delta H - p \Delta V = -21000\,\joule - 101\,\joule = -21101\,\joule.\;\star\star
 $$
 ]{fg="green-shade-3"}
 :::
 
-### Finde die ursprüngliche Temperatur heraus
+### Geschlossen und offen
 
 Du erwärmst $m = 23\,\gram$ Wasser auf eine Endtemperatur $T\sub{Ende} = 343\,\kelvin$ in einem starren geschlossenem System. Die aufgewendete Energie ist $Q = 4347\,\kilojoule$. Die spezifische Wärmekapazität von Wasser ist $C_{p,m} = 4200\,\kilojouleperkilogramperkelvin$. Du brauchst hierbei, keine Antwortsätze aufzuführen.
 
@@ -56,11 +56,11 @@ a. Was war die ursprüngliche Temperatur des Wassers?
 #. Welcher Reaktionstyp liegt hier vor? Warum?
 #. Woher kommt die benötigte Energie?
 #. Wieviel Wasser würde verdampfen, wenn die aufgewendete Energie komplett in die Verdunstung kanalisiert werden könnte? Die spezifische Standardenthalpie der Verdampfung liegt bei $\Delta H^{\circ}_{\mathrm{vap},m} = 2257\,\kilojouleperkilogram$.
-#. Angenommen Du wiederholst das Experiment in einem offenen Gefäss unter Atmosphärendruck $p = 101325\,\pascal$. Du erwärmst das Wasser aber findest heraus, dass etwa $1.1\,\gram$ Wasser am Ende verdunstet sind. Der Wasserdampf nimmt am Ende ein Volumen von $V\sub{Ende} = 1.7\,\liter$ ein. Berechne die Änderung der Enthalpie und der inneren Energie in diesem neuen Szenario.
+#. Angenommen Du wiederholst das Experiment in einem offenen Gefäss unter Atmosphärendruck $p = 101325\,\pascal$. Du erwärmst das Wasser aber findest heraus, dass etwa $1.0\,\gram$ Wasser am Ende verdunstet sind. Der Wasserdampf nimmt am Ende ein Volumen von $V\sub{Ende} = 1.7\,\liter$ ein. Berechne die Änderung der Enthalpie und der inneren Energie in diesem neuen Szenario.
 
 ```{r}
 #| output: false
-points <- 6
+points <- 19
 max_points <- points
 total_points <- total_points + points
 level_3_points <- points * level_3_multiplier
@@ -68,7 +68,7 @@ level_3_max_points <- max_points * level_3_multiplier
 level_3_total_points <- level_3_total_points + level_3_points
 ``` 
 
-[Du kannst `{r} level_2_points` Punkte von `{r} level_2_max_points` möglichen Aufgabenpunkten bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben. Ergebnis: a. $298\,\kelvin$, b., c., d., e. musst Du selbst herausfinden, f. $4160\,\kilojoule$, g. musst Du selbst herausfinden.]{fg="purple"}
+[Du kannst `{r} level_3_points` Punkte von `{r} level_3_max_points` möglichen Aufgabenpunkten bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben. Ergebnis: a. $298\,\kelvin$, b., c., d., e. musst Du selbst herausfinden, f. $2\,\kilogram$, g. $\Delta H = 4160\,\kilojoule$, g. $\Delta U = 3990\,\kilojoule$.]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
 [a. Die passende Gleichung mit der Unbekannten ist:
@@ -137,8 +137,8 @@ Die Änderung der inneren Energie ist dadurch
 $$
 \begin{align*}
 \Delta U &= \Delta H - p \Delta V \\
-    &= 4160\,\kilojoule - 101325\,\pascal \cdot \left(0.001673\,\cubicmeter - 0.000001\,\cubicmeter\right) \\
-    &= 4346\,\kilojoule.\;\star\star
+    &= 4160\,\kilojoule - 101325\,\pascal \cdot 0.0017\,\cubicmeter \\
+    &= 3990\,\kilojoule.\;\star\star
 \end{align*}
 $$]{fg="green-shade-3"}
 :::

@@ -36,7 +36,7 @@ level_1_max_points <- max_points * level_1_multiplier
 level_1_total_points <- level_1_total_points + level_1_points
 ``` 
 
-Wie kann die innere Energie eines isolierten Systems geändert werden? Drücke das mathematisch aus. 
+Wie kann die innere Energie eines isolierten Systems geändert werden? Drücke das verbal als auch mathematisch aus. 
 
 [[`{r} points` Punkte; Drei von drei möglichen Aussagen unter Einbeziehung von Fachsprache sind möglich.]]{fg="purple"}
 
@@ -52,7 +52,7 @@ $$
 
 ```{r}
 #| output: false
-points <- 3
+points <- 4
 max_points <- points
 total_points <- total_points + points
 level_1_points <- points * level_1_multiplier
@@ -60,12 +60,12 @@ level_1_max_points <- max_points * level_1_multiplier
 level_1_total_points <- level_1_total_points + level_1_points
 ``` 
 
-Wie kann die innere Energie eines geschlossenen Systems geändert werden? Drücke dies mathematisch aus. 
+Wie kann die innere Energie eines flexiblen und eines starren geschlossenen Systems geändert werden? Drücke dies mathematisch aus. 
 
 [[`{r} points` Punkte; Drei von drei möglichen Aussagen unter Einbeziehung von Fachsprache sind möglich.]]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
-[Die innere Energie eines geschlossenen Systems kann nicht durch Arbeit\* aber durch Zugabe oder Abgabe von Wärmeenergie\* geändert werden. Alternativ kann man sagen, dass die innere Energie nur durch Wärmeenergie geändert werden kann. Mathematisch bedeutet das
+[Die innere Energie eines flexiblen geschlossenen Systems kann durch Arbeit\* und Wärme\* verändert werden. Die innere Energie eines starren geschlossenen Systems kann nur durch Zugabe oder Abgabe von Wärmeenergie\* geändert werden. Alternativ kann man sagen, dass die innere Energie nur durch Wärmeenergie geändert werden kann. Mathematisch bedeutet das
 $$
 \Delta U = Q.\;\star
 $$
@@ -84,7 +84,7 @@ level_1_max_points <- max_points * level_1_multiplier
 level_1_total_points <- level_1_total_points + level_1_points
 ``` 
 
-Beschreibe mit Deinen eigenen Worten, warum der Teekessel anfängt zu pfeifen. Warum könnte das bei einem offenen Topf nicht passieren.
+Beschreibe mit Deinen eigenen Worten, warum der Teekessel anfängt zu pfeifen. Warum passiert das, was das Pfeifen erzeugt nicht beim offenen Topf? Erkläre mithilfe der Thermodynamik und thermodynamischer Begriffe.
 
 ::: {#fig-closed-open-comparison layout-ncol="2"}
 
@@ -114,7 +114,7 @@ level_1_max_points <- max_points * level_1_multiplier
 level_1_total_points <- level_1_total_points + level_1_points
 ``` 
 
-Was ist die Enthalpie? Beschreibe was sie ist oder warum sie eingeführt werden musste? 
+Was ist die Enthalpie? Beschreibe was sie ist und warum sie eingeführt werden musste? 
 
 [[`{r} points` Punkte; Vier von fünf möglichen Aussagen unter Einbeziehung von Fachsprache sind möglich.]]{fg="purple"}
 
@@ -134,7 +134,7 @@ level_1_max_points <- max_points * level_1_multiplier
 level_1_total_points <- level_1_total_points + level_1_points
 ``` 
 
-Wie ändert sich die Enthalpie grundsätzlich? Grundsätzlich heisst im Allgemeinen und unabhängig von der Art des Systems? Drücke dies mathematisch aus in einer Gleichung, benenne die Variablen und gib ihre Einheit an. 
+Gib die Gleichung für die allgemeine Änderung der Enthalpie an. Benenne alle Variablen und gib deren Einheiten an. 
 
 [[`{r} points` Punkte; Sieben von sieben möglichen Aussagen unter Einbeziehung von Fachsprache sind möglich.]]{fg="purple"}
 
@@ -146,9 +146,9 @@ $$
 Dabei ist $\Delta H$ die Änderung der Enthalpie\* in $[\joule]$\*, $\Delta U$ die Änderung der inneren Energie\* ebenfalls in $[\joule]$\*, und $\Delta \left( pV \right)$ die Änderung des Produktes aus Druck $p$ und Volumen $V$\*, wieder in $[\joule]$\*.]{fg="green-shade-3"}
 :::
 
-### Unterschied zwischen Änderung der Enthalpie und der inneren Energie
+### Unterschied der Änderung zwischen Enthalpie und innere Energie
 
-Wie unterscheidet sich die Änderung der Enthalpie von der Änderung der inneren Energie bei konstantem Druck? Erkläre anhand der Gleichung, die den Unterschied zeigt. Erläutere weiterhin, wann die Verwendung der Enthalpieänderung sich stark von der Änderung der inneren Energie unterscheidet. 
+Wie unterscheidet sich die Änderung der Enthalpie von der Änderung der inneren Energie bei konstantem Druck? Erkläre das anhand der Gleichung, die den Unterschied zeigt. Erläutere weiterhin, wann die Verwendung der Enthalpieänderung sich stark von der Änderung der inneren Energie unterscheidet. 
 
 ```{r}
 #| output: false
@@ -170,7 +170,7 @@ $$
 Der Unterschied ist eine Expansionsarbeit oder Volumenarbeit\*. Das bedeutet, dass ein Teil der Energie, die mit der Umgebung ausgetauscht wird, nicht in die innere Energie hinein gesteckt wird\*, oder aus ihr heraus kommt\*. Dieser Teil geht entweder in die Umgebung zurück\* oder kommt aus der Umgebung\*. Die Änderung der Enthalpie unterscheidet sich stark von der Änderung der inneren Energie, wenn Gase gebildet oder verbraucht werden\*.]{fg="green-shade-3"}
 :::
 
-### Die Größe der Enthalpie bei konstantem Druck
+### Enthalpieänderung im geschlossenen System
 
 Gib die Gleichung wieder, die die Größe der Enthalpie bei konstantem Druck angibt. Benenne alle Variablen und gib ihre Einheiten an.
 
@@ -194,9 +194,9 @@ $$
 Dabei ist $\Delta H$ die Enthalpie\* angegeben in $[\joule]$\* und $Q$ ist die zwischen Umgebung und System verschobene Wärmeenergie\*, ebenfalls in $[\joule]$\*.]{fg="green-shade-3"}
 :::
 
-### Arten von Reaktionen bei konstantem Druck
+### Reaktionsarten bei konstantem Druck
 
-Betrachte ein offenes System unter konstantem Druck; also offen zur Atmosphäre. Welche Arten von Enthalpieänderungen sind grundsätzlich möglich? Beschreibe sowohl schriftlich als auch mathematisch die Art der Änderung.
+Betrachte ein offenes System unter konstantem Druck; also offen zur Atmosphäre. Welche Arten von Enthalpieänderungen sind grundsätzlich möglich? Beschreibe sowohl schriftlich als auch mathematisch die Art der Änderung. Verwende die Tabellenform mit Spaltennamen: `Delta H`, `Reaktionsart`, `Beschreibung`.
 
 ```{r}
 #| output: false
@@ -212,26 +212,6 @@ level_1_total_points <- level_1_total_points + level_1_points
 
 ::: {.content-hidden unless-meta="show-rating"}
 [Die folgenden Enthalpieänderungen sind möglich: 1. $\Delta H < 0$\*: Exotherme Reaktion\*, das System gibt Energie an die Umgebung ab\*. In der Umgebung einer exothermen Reaktion wird es warm\*. 2. $\Delta H = 0$\*: Kein Austausch von Energie zwischen System und Umgebung\*. Keine Temperaturänderung in der Nähe einer solchen Reaktion\*. 3. $\Delta H > 0$\*: Endotherme Reaktion\*, das System gewinnt Energie aus der Umgebung\*. In der Umgebung einer endothermen Reaktion wird es kalt.]{fg="green-shade-3"}
-:::
-
-### Definition der Standardenthalpie
-
-Wie ist die Standardenthalpie definiert.
-
-```{r}
-#| output: false
-points <- 3
-max_points <- 4
-total_points <- total_points + points
-level_1_points <- points * level_1_multiplier
-level_1_max_points <- max_points * level_1_multiplier
-level_1_total_points <- level_1_total_points + level_1_points
-``` 
-
-[[Du kannst `{r} points` Punkte von `{r} max_points` möglichen Aufgabenpunkten bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben.]]{fg="purple"}
-
-::: {.content-hidden unless-meta="show-rating"}
-[Die Standardenthalpie ist diejenige Enthalpie, die bei konstantem Druck unter den Standardbedingungen\* einer Temperatur von $298\,\kelvin$\* oder $25\,\celsius$ und einem Druck von $101325\,\pascal$\*; also normaler Atmosphärendruck auf Meereshöhe\*.]{fg="green-shade-3"}
 :::
 
 ### Definition der Standardenthalpieänderung

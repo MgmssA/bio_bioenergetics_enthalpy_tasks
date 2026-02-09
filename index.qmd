@@ -4,10 +4,11 @@
 {{< include _includes/_r_themes.qmd >}}
 {{< include _includes/_r_rating_init.qmd >}}
 
+In den folgenden Aufgaben wird öfters die Standardenthalpie verwendet. Wie alle thermodynamischen Funktionen, ist auch die Enthalpie von anderen Grössen wie Temperatur, Druck, und andere abhängig und kann sich dadurch verändern. In den engen Grenzen, in denen sich lebende Systeme bewegen, ist das eine annehmbare und gute Näherung. 
+
 {{< include _level_1.qmd >}}
 {{< include _level_2.qmd >}}
 {{< include _level_3.qmd >}}
 
 {{< include _includes/_r_rating.qmd >}}
-
 

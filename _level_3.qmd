@@ -2,7 +2,7 @@
 
 ### Unterschied Enthalpie-innere Energie
 
-Bei einer Verbrennung von Glucose unter freiem Himmel und bei konstantem Druck $p = 101325\;\pascal$ entsteht ein Liter $1\,\liter$ des Gases $\ce{CO2}$. 
+Bei einer Verbrennung von Glucose unter freiem Himmel und bei konstantem Druck $p = 101325\;\pascal$ entsteht ein Liter $1\,\liter$ des Gases $\ce{CO2}$. Achte auf die Einheiten! 
 
 a. Was ist dabei der Unterschied zwischen der Abnahme der Enthalpie und der inneren Energie? 
 #. Vergleiche das mit der dabei enstandenen Enthalpieänderung von $\Delta H \approx -21\,\kilojoule$; zum Beispiel als Prozentwert.
@@ -20,10 +20,10 @@ level_3_max_points <- max_points * level_3_multiplier
 level_3_total_points <- level_3_total_points + level_3_points 
 ``` 
 
-[[Du kannst `{r} level_3_points` Punkte von `{r} level_3_max_points` möglichen Aufgabenpunkten bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben. Ergebnis: a. $101\,\kilojoule$, b. $0.5\,\%$, c. und d. Das musst Du herausfinden.]]{fg="purple"}
+[[Du kannst `{r} level_3_points` Punkte von `{r} level_3_max_points` möglichen Aufgabenpunkten bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben. Ergebnis: a. $101\,\kilojoule$, b. $0.5\,\%$, c. und d. musst Du herausfinden.]]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
-[Die passende Gleichung mit der Unbekannten ist:
+[a. Die passende Gleichung mit der Unbekannten ist:
 $$
 \underbrace{\Delta H - \Delta U}_{\mathrm{?}\star} = p \Delta V.\;\star
 $$
@@ -31,7 +31,7 @@ Ein Liter eines Gases entspricht einem Volumen von $0.001\,\cubicmeter$. Da das 
 $$
 \Delta V = V\sub{Ende} - V\sub{Anfang} = 0.001\,\cubicmeter - 0\,\cubicmeter = 0.001\,\cubicmeter.\;\star\star
 $$
-Der Unterschied zwischen Enthalpie und innerer Energie ist
+b.Der Unterschied zwischen Enthalpie und innerer Energie ist
 $$
 \Delta H - \Delta U = p \Delta V = 101325\,\pascal \cdot 0.001\,\cubicmeter \approx 101\,\joule.\;\star\star
 $$
@@ -39,7 +39,7 @@ Dieser Unterschied macht etwa
 $$
 \frac{\Delta H - \Delta U}{\Delta H} \cdot 100 = \frac{101\,\joule}{21000\,\joule} \cdot 100 = 0.005 \cdot 100 = 0.5\%.\;\star\star
 $$
-Es handelt sich um eine exotherme Reaktion\*. Der Unterschied wird zur Expansionsarbeit genutzt\*. Um die Änderung der inneren Energie zu berechnen stellst Du die ursprüngliche Gleichung so um:
+c. Es handelt sich um eine exotherme Reaktion\*. d. Der Unterschied wird zur Expansionsarbeit genutzt\*. e. Um die Änderung der inneren Energie zu berechnen stellst Du die ursprüngliche Gleichung so um:
 $$
 \underbrace{\Delta U}_{?\star} = \Delta H - p \Delta V = -21000\,\joule - 101\,\joule = -21101\,\joule.\;\star\star
 $$
@@ -48,11 +48,15 @@ $$
 
 ### Finde die ursprüngliche Temperatur heraus
 
-Du hast eben $m = 23\,\gram$ Wasser erwärmt und die Endtemperatur ist $T\sub{Ende} = 343\,\kelvin$. Die aufgewendete Energie ist $\Delta H^{\circ} = 4347\,\kilojoule$. Die spezifische Wärmekapazität von Wasser $C_{p,m} = 4200\;\kilojouleperkilogramperkelvin$. 
+Du erwärmst $m = 23\,\gram$ Wasser auf eine Endtemperatur $T\sub{Ende} = 343\,\kelvin$ in einem starren geschlossenem System. Die aufgewendete Energie ist $Q = 4347\,\kilojoule$. Die spezifische Wärmekapazität von Wasser ist $C_{p,m} = 4200\,\kilojouleperkilogramperkelvin$. Du brauchst hierbei, keine Antwortsätze aufzuführen.
 
-#. Was war die ursprüngliche Temperatur des Wassers? 
+a. Was war die ursprüngliche Temperatur des Wassers?
+#. Was ist die Änderung der inneren Energie?
+#. Was ist die Änderung der Enthalpie? 
 #. Welcher Reaktionstyp liegt hier vor? Warum?
 #. Woher kommt die benötigte Energie?
+#. Wieviel Wasser würde verdampfen, wenn die aufgewendete Energie komplett in die Verdunstung kanalisiert werden könnte? Die spezifische Standardenthalpie der Verdampfung liegt bei $\Delta H^{\circ}_{\mathrm{vap},m} = 2257\,\kilojouleperkilogram$.
+#. Angenommen Du wiederholst das Experiment in einem offenen Gefäss unter Atmosphärendruck $p = 101325\,\pascal$. Du erwärmst das Wasser aber findest heraus, dass etwa $1.1\,\gram$ Wasser am Ende verdunstet sind. Der Wasserdampf nimmt am Ende ein Volumen von $V\sub{Ende} = 1.7\,\liter$ ein. Berechne die Änderung der Enthalpie und der inneren Energie in diesem neuen Szenario.
 
 ```{r}
 #| output: false
@@ -64,25 +68,80 @@ level_3_max_points <- max_points * level_3_multiplier
 level_3_total_points <- level_3_total_points + level_3_points
 ``` 
 
-[Du kannst `{r} level_2_points` Punkte von `{r} level_2_max_points` möglichen Aufgabenpunkten bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben. Ergebnis: 1. $298\,\kelvin$, 2. und 3. musst Du selbst herausfinden.]{fg="purple"}
+[Du kannst `{r} level_2_points` Punkte von `{r} level_2_max_points` möglichen Aufgabenpunkten bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben. Ergebnis: a. $298\,\kelvin$, b., c., d., e. musst Du selbst herausfinden, f. $4160\,\kilojoule$, g. musst Du selbst herausfinden.]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
-[Die passende Gleichung mit der Unbekannten ist:
+[a. Die passende Gleichung mit der Unbekannten ist:
 $$
-\Delta H^{\circ} = m C_{p,m} \Delta T = m C_{p,m} \left( T\sub{Ende} - \underbrace{T\sub{Anfang}}_{?\star} \right).\;\star
+Q = m C_{p,m} \Delta T = m C_{p,m} \left( T\sub{Ende} - \underbrace{T\sub{Anfang}}_{?\star} \right).\;\star
 $$
 Umstellen der Gleichung ergibt
 $$
-\frac{\Delta H^{\circ}}{ m C_{p,m}} = T\sub{Ende} - T\sub{Anfang},
+\frac{Q}{ m C_{p,m}} = T\sub{Ende} - T\sub{Anfang},
 $$
 und weiteres Umstellen nach $T\sub{Anfang}$ führt zu
 $$
-T\sub{Anfang} = T\sub{Ende} - \frac{\Delta H^{\circ}}{ m C_{p,m}}.
+T\sub{Anfang} = T\sub{Ende} - \frac{Q}{ m C_{p,m}}.
 $$
 Einsetzen ergibt
 $$
 T\sub{Anfang} = 343\,\kelvin - \frac{4347\,\kilojoule}{ 0.023\,\kilogram \cdot 4200\,\kilojouleperkilogramperkelvin} = 343\,\kelvin - 45\,\kelvin = 298\,\kelvin.\;\star\star
 $$
-Es handelt sich um eine endotherme Reaktion\*. Die Energie kommt aus der Umgebung, wo es kälter wird.\*.]{fg="green-shade-3"}
+b. Die Änderung der inneren Energie bei einem starren geschlossenem System ist
+$$
+\Delta U = Q.\star
+$$
+Also
+$$
+\Delta U = 4347\,\kilojoule.\star\star
+$$
+c. Die Änderung der Enthalpie ist
+$$
+\Delta H = \Delta U + p \Delta V.\star
+$$
+Da das System geschlossen ist, ist $\Delta V = 0$. Daraus folgt
+$$
+\Delta H = \Delta U = 4347\,\kilojoule.\star\star
+$$
+d. Es handelt sich um eine endotherme Reaktion\*. e. Die Energie kommt aus der Umgebung, wo es kälter wird.\*. f. Für die Verdampfung brauchen wir die Gleichung
+$$
+\Delta H = m \Delta H^{\circ}_{\mathrm{vap},m}.\star
+$$
+Wir kennen die Energie, die hinein gesteckt worden ist. Dadurch müssen wir lediglich nach der Masse auflösen. Wenn also die gesamte zugeführte Energie für die Verdampfung verwendet wird, dann würden
+$$
+m = \frac{\Delta H}{\Delta H^{\circ}_{\mathrm{vap},m}} = \frac{ 4347\,\kilojoule}{2257\,\kilojouleperkilogram} \approx 2\,\kilogram\;\;\star\star
+$$
+verdampfen. g. Die gesamte Enthalpieänderung ist 
+$$
+\Delta H = \Delta H\sub{heat} + \Delta H\sub{vap}.\;\star
+$$
+Zuerst die Aufheizenergie
+$$
+\begin{align*}
+\Delta H\sub{heat} &= \left(m - m\sub{vap}\right) C_{p,m} \Delta T \\
+    &= \left(0.023\,\kilogram - 0.001\,\kilogram\right) \cdot 4200\,\kilojouleperkilogramperkelvin \cdot 45\,\kelvin \\
+    &= 4158\,\kilojoule,
+\end{align*}
+$$
+dann die Verdampfungsenergie 
+$$
+\Delta H\sub{vap} = m\sub{vap} \Delta H^{\circ}_{\mathrm{vap},m}
+    = 0.001\,\kilogram \cdot 2257\,\kilojouleperkilogram
+    = 2.3\,\kilojoule.
+$$
+Die gesamte Enthalpieänderung ist
+$$
+\Delta H = 4158\,\kilojoule + 2.3\,\kilojoule = 4160\,\kilojoule.\;\star\star
+$$
+Die Änderung der inneren Energie ist dadurch
+$$
+\begin{align*}
+\Delta U &= \Delta H - p \Delta V \\
+    &= 4160\,\kilojoule - 101325\,\pascal \cdot \left(0.001673\,\cubicmeter - 0.000001\,\cubicmeter\right) \\
+    &= 4346\,\kilojoule.\;\star\star
+\end{align*}
+$$]{fg="green-shade-3"}
 :::
+
+
 

@@ -32,7 +32,7 @@ Die Energie geht Dir verloren, dem System; also ist die Arbeit negativ\*.]{fg="g
 
 Du möchtest einen Kilogramm Wassereis bei $25\,\celsius$ komplett zu flüssigem Wasser schmelzen. Die Standardschmelzenthalpie von Wasser beträgt $\Delta H^{\circ}_m = 333.55\;\kilojouleperkilogram$ 
 
-#. Welche Enthalpieänderung ist notwendig? 
+a. Welche Enthalpieänderung ist notwendig? 
 #. Welcher Reaktionstyp liegt hier vor? Warum?
 #. Von wo nach wo fliesst Energie?
 
@@ -46,7 +46,7 @@ level_2_max_points <- max_points * level_2_multiplier
 level_2_total_points <- level_2_total_points + level_2_points
 ``` 
 
-[Du kannst `{r} level_2_points` Punkte von `{r} level_2_max_points` möglichen Aufgabenpunkten bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben. Ergebnis: 1. $333.55\,\kilojoule$, 2. und 3. musst Du selbst herausfinden.]{fg="purple"}
+[Du kannst `{r} level_2_points` Punkte von `{r} level_2_max_points` möglichen Aufgabenpunkten bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben. Ergebnis: a. $333.55\,\kilojoule$, b. und c. musst Du selbst herausfinden.]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
 [Die passende Gleichung mit der Unbekannten ist:

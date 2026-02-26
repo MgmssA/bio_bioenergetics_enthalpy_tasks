@@ -92,7 +92,7 @@ $$
 
 Du möchtest $m = 8\,\gram$ Wasser bei $25\,\celsius$ komplett in Dampf überführen. Die spezifische Standardschmelzenthalpie zum Verdampfen von Wasser beträgt $\Delta H^{\circ}_m = 2257\;\kilojouleperkilogram$ 
 
-#. Welche Enthalpieänderung ist notwendig? 
+a. Welche Enthalpieänderung ist notwendig? 
 #. Welcher Reaktionstyp liegt hier vor? Warum?
 #. Von wo nach wo fliesst die Energie?
 
@@ -106,7 +106,7 @@ level_2_max_points <- max_points * level_2_multiplier
 level_2_total_points <- level_2_total_points + level_2_points
 ``` 
 
-[Du kannst `{r} level_2_points` Punkte von `{r} level_2_max_points` möglichen Aufgabenpunkten bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben. Ergebnis: 1. $18\,\kilojoule$, 2. und 3. musst Du selbst herausfinden.]{fg="purple"}
+[Du kannst `{r} level_2_points` Punkte von `{r} level_2_max_points` möglichen Aufgabenpunkten bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben. Ergebnis: a. $18\,\kilojoule$, b. und c. musst Du selbst herausfinden.]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
 [Die passende Gleichung mit der Unbekannten ist:
@@ -122,9 +122,9 @@ Es handelt sich um eine endotherme Reaktion\*. Die Energie kommt aus der Umgebun
 
 ### Erwärmen von Wasser
 
-Du möchtest $m = 15\,\gram$ Wasser bei $25\,\celsius$ um einen Grad erwärmen. Die spezifische Wärmekapazität von Wasser $C_{p,m} = 4200\;\kilojouleperkilogramperkelvin$. 
+Du möchtest $m = 15\,\gram$ Wasser bei $25\,\celsius$ um einen Grad erwärmen. Die spezifische Wärmekapazität von Wasser $C_{p,m} = 4200\;\jouleperkilogramperkelvin$. 
 
-#. Welche Enthalpieänderung ist notwendig? 
+a. Welche Enthalpieänderung ist notwendig? 
 #. Welcher Reaktionstyp liegt hier vor? Warum?
 #. Von wo nach wo fliesst die Energie?
 
@@ -138,7 +138,7 @@ level_2_max_points <- max_points * level_2_multiplier
 level_2_total_points <- level_2_total_points + level_2_points
 ``` 
 
-[Du kannst `{r} level_2_points` Punkte von `{r} level_2_max_points` möglichen Aufgabenpunkten bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben. Ergebnis: 1. $63\,\kilojoule$, 2. und 3. musst Du selbst herausfinden.]{fg="purple"}
+[Du kannst `{r} level_2_points` Punkte von `{r} level_2_max_points` möglichen Aufgabenpunkten bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben. Ergebnis: a. $63\,\joule$, b. und c. musst Du selbst herausfinden.]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
 [Die passende Gleichung mit der Unbekannten ist:
@@ -147,14 +147,14 @@ $$
 $$
 Das Erwärmen benötigt eine Enthalpieänderung 
 $$
-\Delta H^{\circ} = 0.015\,\kilogram \cdot 4200\,\kilojouleperkilogramperkelvin \cdot 1\,\kelvin = 63\,\kilojoule.\;\star\star
+\Delta H^{\circ} = 0.015\,\kilogram \cdot 4200\,\jouleperkilogramperkelvin \cdot 1\,\kelvin = 63\,\joule.\;\star\star
 $$
 Es handelt sich um eine endotherme Reaktion\*. Die Energie kommt aus der Umgebung, wo es kälter wird.\*.]{fg="green-shade-3"}
 :::
 
 ### Abkühlen von Wasser
 
-Du möchtest $m = 9\,\gram$ Wasser bei $25\,\celsius$ um einen Grad kühlen. Die spezifische Wärmekapazität von Wasser $C_{p,m} = 4200\;\kilojouleperkilogramperkelvin$. 
+Du möchtest $m = 9\,\gram$ Wasser bei $25\,\celsius$ um einen Grad kühlen. Die spezifische Wärmekapazität von Wasser $C_{p,m} = 4200\;\jouleperkilogramperkelvin$. 
 
 #. Welche Enthalpieänderung ist notwendig? 
 #. Welcher Reaktionstyp liegt hier vor? Warum?
@@ -170,7 +170,7 @@ level_2_max_points <- max_points * level_2_multiplier
 level_2_total_points <- level_2_total_points + level_2_points
 ``` 
 
-[Du kannst `{r} level_2_points` Punkte von `{r} level_2_max_points` möglichen Aufgabenpunkten bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben. Ergebnis: 1. $-38\,\kilojoule$, 2. und 3. musst Du selbst herausfinden.]{fg="purple"}
+[Du kannst `{r} level_2_points` Punkte von `{r} level_2_max_points` möglichen Aufgabenpunkten bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben. Ergebnis: 1. $-38\,\joule$, 2. und 3. musst Du selbst herausfinden.]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
 [Die passende Gleichung mit der Unbekannten ist:
@@ -179,7 +179,7 @@ $$
 $$
 Das Erwärmen benötigt eine Enthalpieänderung 
 $$
-\Delta H^{\circ} = 0.009\,\kilogram \cdot 4200\,\kilojouleperkilogramperkelvin \cdot -1\,\kelvin = -38\,\kilojoule.\;\star\star
+\Delta H^{\circ} = 0.009\,\kilogram \cdot 4200\,\jouleperkilogramperkelvin \cdot -1\,\kelvin = -38\,\joule.\;\star\star
 $$
 Es handelt sich um eine exotherme Reaktion\*. Die Energie wird aus dem System gezogen und geht dem System verloren. Die abgezogene Energie erwärmt die Umgebung.\*.]{fg="green-shade-3"}
 :::

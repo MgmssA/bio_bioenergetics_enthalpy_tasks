@@ -6,7 +6,7 @@ Du hebst eine Masse von $m = 1\,\kilogram$ um $h = 10\,\meter$. Welche Energie b
 
 ```{r}
 #| output: false
-points <- 5
+points <- 4
 max_points <- points
 total_points <- total_points + points
 level_2_points <- points * level_2_multiplier
@@ -25,7 +25,7 @@ Daraus wird die Arbeit ermittelt nach:
 $$
 W = -F_g \Delta s = -m g \Delta h = 1\,\kilogram \cdot 10\,\newtonperkilogram \cdot 10\,\meter = -100\,\joule.\;\star\star
 $$
-Die Energie geht Dir verloren, dem System; also ist die Arbeit negativ\*.]{fg="green-shade-3"}
+Die Energie geht Dir verloren\*, dem System; also ist die Arbeit negativ\*.]{fg="green-shade-3"}
 :::
 
 ### Schmelzen von Wasser I
@@ -38,7 +38,7 @@ a. Welche Enthalpieänderung ist notwendig?
 
 ```{r}
 #| output: false
-points <- 6
+points <- 5
 max_points <- points
 total_points <- total_points + points
 level_2_points <- points * level_2_multiplier
@@ -66,7 +66,7 @@ Du möchtest zehn Gramm Wassereis bei $25\,\celsius$ komplett zu flüssigem Wass
 
 ```{r}
 #| output: false
-points <- 4
+points <- 5
 max_points <- points
 total_points <- total_points + points
 level_2_points <- points * level_2_multiplier
@@ -85,7 +85,7 @@ Das Schmelzen erzeugt eine Enthalpieänderung
 $$
 \Delta H^{\circ} = 0.01\,\kilogram \cdot 333.55\,\kilojouleperkilogram = 3.33\,\kilojoule.\;\star\star
 $$
-]{fg="green-shade-3"}
+Um $10\,\gram$ Wassereis in den flüssigen Zustand zu überführen, braucht man $3.33\,\kilojoule$\* Energie in Form von Wärme\*.]{fg="green-shade-3"}
 :::
 
 ### Verdampfen von Wasser
@@ -98,7 +98,7 @@ a. Welche Enthalpieänderung ist notwendig?
 
 ```{r}
 #| output: false
-points <- 6
+points <- 5
 max_points <- points
 total_points <- total_points + points
 level_2_points <- points * level_2_multiplier
@@ -130,7 +130,7 @@ a. Welche Enthalpieänderung ist notwendig?
 
 ```{r}
 #| output: false
-points <- 6
+points <- 5
 max_points <- points
 total_points <- total_points + points
 level_2_points <- points * level_2_multiplier
@@ -162,7 +162,7 @@ Du möchtest $m = 9\,\gram$ Wasser bei $25\,\celsius$ um einen Grad kühlen. Die
 
 ```{r}
 #| output: false
-points <- 6
+points <- 5
 max_points <- points
 total_points <- total_points + points
 level_2_points <- points * level_2_multiplier

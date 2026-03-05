@@ -156,7 +156,7 @@ Es handelt sich um eine endotherme Reaktion\*. Die Energie kommt aus der Umgebun
 
 Du möchtest $m = 9\,\gram$ Wasser bei $25\,\celsius$ um einen Grad kühlen. Die spezifische Wärmekapazität von Wasser $C_{p,m} = 4200\;\jouleperkilogramperkelvin$. 
 
-#. Welche Enthalpieänderung ist notwendig? 
+a. Welche Enthalpieänderung ist notwendig? 
 #. Welcher Reaktionstyp liegt hier vor? Warum?
 #. Von wo nach wo fliesst die benötigte Energie?
 
@@ -170,7 +170,7 @@ level_2_max_points <- max_points * level_2_multiplier
 level_2_total_points <- level_2_total_points + level_2_points
 ``` 
 
-[Du kannst `{r} level_2_points` Punkte von `{r} level_2_max_points` möglichen Aufgabenpunkten bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben. Ergebnis: 1. $-38\,\joule$, 2. und 3. musst Du selbst herausfinden.]{fg="purple"}
+[Du kannst `{r} level_2_points` Punkte von `{r} level_2_max_points` möglichen Aufgabenpunkten bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben. Ergebnis: a. $-38\,\joule$, b. und c. musst Du selbst herausfinden.]{fg="purple"}
 
 ::: {.content-hidden unless-meta="show-rating"}
 [Die passende Gleichung mit der Unbekannten ist:

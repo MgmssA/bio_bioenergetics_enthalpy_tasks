@@ -48,7 +48,7 @@ $$
 
 ### Geschlossen und offen
 
-Du erwärmst $m = 23\,\gram$ Wasser auf eine Endtemperatur $T\sub{Ende} = 343\,\kelvin$ in einem starren geschlossenem System. Die aufgewendete Energie ist $Q = 4347\,\kilojoule$. Die spezifische Wärmekapazität von Wasser ist $C_{p,m} = 4200\,\kilojouleperkilogramperkelvin$. Du brauchst hierbei, keine Antwortsätze aufzuführen.
+Du erwärmst $m = 23\,\gram$ Wasser auf eine Endtemperatur $T\sub{Ende} = 343\,\kelvin$ in einem starren geschlossenem System. Die aufgewendete Energie ist $Q = 4347\,\kilojoule$. Die spezifische Wärmekapazität von Wasser ist $C_{p,m} = 4200\,\jouleperkilogramperkelvin$. Du brauchst hierbei, keine Antwortsätze aufzuführen.
 
 a. Was war die ursprüngliche Temperatur des Wassers?
 #. Was ist die Änderung der inneren Energie?

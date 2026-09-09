@@ -1,0 +1,2470 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.19">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Călin Aurel Drăgan">
+
+<title>quarto-inputb3c7e1cf8745bc77</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="index_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="index_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-46eeb4c476de49ef7df495821a6125d9.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-dark-2e0ab3ffcb189ca14a0af92b40aeab37.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-46eeb4c476de49ef7df495821a6125d9.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap-0acb27bd87c979fac76ce5db0ba1c2ed.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="index_files/libs/bootstrap/bootstrap-dark-0acb27bd87c979fac76ce5db0ba1c2ed.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="index_files/libs/bootstrap/bootstrap-0acb27bd87c979fac76ce5db0ba1c2ed.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.16.23/dist/contrib/mhchem.min.js" integrity="sha384-F2ptQFZqNJuqfGGl28mIXyQ5kXH48spn7rcoS0Y9psqIKAcZPLd1NzwFlm/bl1mH" crossorigin="anonymous"></script>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="quarto-light">
+
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title"><p>
+<img src="style/mgmss_symbol_color.png" class="img-fluid" width="40">
+</p>
+<p>Bioenergetik - Enthalpie</p></h1>
+            <p class="subtitle lead">Chemische Energie<br><small>Aufgaben</small></p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Autor:in</div>
+      <div class="quarto-title-meta-contents">
+               <p>Călin Aurel Drăgan </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Veröffentlichungsdatum</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">11. November 2025</p>
+      </div>
+    </div>
+    
+      <div>
+      <div class="quarto-title-meta-heading">Geändert</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date-modified">9. Februar 2026</p>
+      </div>
+    </div>
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active" data-toc-expanded="99">
+    <h2 id="toc-title">Inhaltsverzeichnis</h2>
+   
+  <ul>
+  <li><a href="#arbeitsaufträge" id="toc-arbeitsaufträge" class="nav-link active" data-scroll-target="#arbeitsaufträge">Arbeitsaufträge</a></li>
+  <li><a href="#stufe-i" id="toc-stufe-i" class="nav-link" data-scroll-target="#stufe-i"><span class="header-section-number">1</span> Stufe I</a>
+  <ul>
+  <li><a href="#änderung-der-inneren-energie" id="toc-änderung-der-inneren-energie" class="nav-link" data-scroll-target="#änderung-der-inneren-energie"><span class="header-section-number">1.1</span> Änderung der inneren Energie</a></li>
+  <li><a href="#änderung-der-inneren-energie---isoliertes-system" id="toc-änderung-der-inneren-energie---isoliertes-system" class="nav-link" data-scroll-target="#änderung-der-inneren-energie---isoliertes-system"><span class="header-section-number">1.2</span> Änderung der inneren Energie - isoliertes System</a></li>
+  <li><a href="#änderung-der-inneren-energie--geschlossenes-system" id="toc-änderung-der-inneren-energie--geschlossenes-system" class="nav-link" data-scroll-target="#änderung-der-inneren-energie--geschlossenes-system"><span class="header-section-number">1.3</span> Änderung der inneren Energie- geschlossenes System</a></li>
+  <li><a href="#teekessel-und-offener-topf" id="toc-teekessel-und-offener-topf" class="nav-link" data-scroll-target="#teekessel-und-offener-topf"><span class="header-section-number">1.4</span> Teekessel und offener Topf</a></li>
+  <li><a href="#beschreibung-der-enthalpie" id="toc-beschreibung-der-enthalpie" class="nav-link" data-scroll-target="#beschreibung-der-enthalpie"><span class="header-section-number">1.5</span> Beschreibung der Enthalpie</a></li>
+  <li><a href="#allgemeine-änderung-der-enthalpie" id="toc-allgemeine-änderung-der-enthalpie" class="nav-link" data-scroll-target="#allgemeine-änderung-der-enthalpie"><span class="header-section-number">1.6</span> Allgemeine Änderung der Enthalpie</a></li>
+  <li><a href="#unterschied-der-änderung-zwischen-enthalpie-und-innerer-energie" id="toc-unterschied-der-änderung-zwischen-enthalpie-und-innerer-energie" class="nav-link" data-scroll-target="#unterschied-der-änderung-zwischen-enthalpie-und-innerer-energie"><span class="header-section-number">1.7</span> Unterschied der Änderung zwischen Enthalpie und innerer Energie</a></li>
+  <li><a href="#enthalpieänderung-bei-konstantem-druck" id="toc-enthalpieänderung-bei-konstantem-druck" class="nav-link" data-scroll-target="#enthalpieänderung-bei-konstantem-druck"><span class="header-section-number">1.8</span> Enthalpieänderung bei konstantem Druck</a></li>
+  <li><a href="#reaktionsarten-bei-konstantem-druck" id="toc-reaktionsarten-bei-konstantem-druck" class="nav-link" data-scroll-target="#reaktionsarten-bei-konstantem-druck"><span class="header-section-number">1.9</span> Reaktionsarten bei konstantem Druck</a></li>
+  <li><a href="#definition-der-standardenthalpieänderung" id="toc-definition-der-standardenthalpieänderung" class="nav-link" data-scroll-target="#definition-der-standardenthalpieänderung"><span class="header-section-number">1.10</span> Definition der Standardenthalpieänderung</a></li>
+  <li><a href="#auf-masse-und-molanzahl-bezogene-standardenthalpieänderung" id="toc-auf-masse-und-molanzahl-bezogene-standardenthalpieänderung" class="nav-link" data-scroll-target="#auf-masse-und-molanzahl-bezogene-standardenthalpieänderung"><span class="header-section-number">1.11</span> Auf Masse und Molanzahl bezogene Standardenthalpieänderung</a></li>
+  <li><a href="#wärmekapazität" id="toc-wärmekapazität" class="nav-link" data-scroll-target="#wärmekapazität"><span class="header-section-number">1.12</span> Wärmekapazität</a></li>
+  <li><a href="#auf-masse-und-molanzahl-bezogene-wärmekapazität" id="toc-auf-masse-und-molanzahl-bezogene-wärmekapazität" class="nav-link" data-scroll-target="#auf-masse-und-molanzahl-bezogene-wärmekapazität"><span class="header-section-number">1.13</span> Auf Masse und Molanzahl bezogene Wärmekapazität</a></li>
+  </ul></li>
+  <li><a href="#stufe-ii" id="toc-stufe-ii" class="nav-link" data-scroll-target="#stufe-ii"><span class="header-section-number">2</span> Stufe II</a>
+  <ul>
+  <li><a href="#heben-einer-masse" id="toc-heben-einer-masse" class="nav-link" data-scroll-target="#heben-einer-masse"><span class="header-section-number">2.1</span> Heben einer Masse</a></li>
+  <li><a href="#schmelzen-von-wasser-i" id="toc-schmelzen-von-wasser-i" class="nav-link" data-scroll-target="#schmelzen-von-wasser-i"><span class="header-section-number">2.2</span> Schmelzen von Wasser I</a></li>
+  <li><a href="#schmelzen-von-wasser-ii" id="toc-schmelzen-von-wasser-ii" class="nav-link" data-scroll-target="#schmelzen-von-wasser-ii"><span class="header-section-number">2.3</span> Schmelzen von Wasser II</a></li>
+  <li><a href="#verdampfen-von-wasser" id="toc-verdampfen-von-wasser" class="nav-link" data-scroll-target="#verdampfen-von-wasser"><span class="header-section-number">2.4</span> Verdampfen von Wasser</a></li>
+  <li><a href="#erwärmen-von-wasser" id="toc-erwärmen-von-wasser" class="nav-link" data-scroll-target="#erwärmen-von-wasser"><span class="header-section-number">2.5</span> Erwärmen von Wasser</a></li>
+  <li><a href="#abkühlen-von-wasser" id="toc-abkühlen-von-wasser" class="nav-link" data-scroll-target="#abkühlen-von-wasser"><span class="header-section-number">2.6</span> Abkühlen von Wasser</a></li>
+  </ul></li>
+  <li><a href="#stufe-iii" id="toc-stufe-iii" class="nav-link" data-scroll-target="#stufe-iii"><span class="header-section-number">3</span> Stufe III</a>
+  <ul>
+  <li><a href="#zuckerverbrennung" id="toc-zuckerverbrennung" class="nav-link" data-scroll-target="#zuckerverbrennung"><span class="header-section-number">3.1</span> Zuckerverbrennung</a></li>
+  <li><a href="#geschlossen-und-offen" id="toc-geschlossen-und-offen" class="nav-link" data-scroll-target="#geschlossen-und-offen"><span class="header-section-number">3.2</span> Geschlossen und offen</a></li>
+  </ul></li>
+  <li><a href="#punkte" id="toc-punkte" class="nav-link" data-scroll-target="#punkte">Punkte</a>
+  <ul>
+  <li><a href="#gesamtpunkte-pro-stufe" id="toc-gesamtpunkte-pro-stufe" class="nav-link" data-scroll-target="#gesamtpunkte-pro-stufe">Gesamtpunkte pro Stufe</a></li>
+  <li><a href="#punkte-pro-aufgabe" id="toc-punkte-pro-aufgabe" class="nav-link" data-scroll-target="#punkte-pro-aufgabe">Punkte pro Aufgabe</a></li>
+  <li><a href="#benotung-nach-punkten" id="toc-benotung-nach-punkten" class="nav-link" data-scroll-target="#benotung-nach-punkten">Benotung nach Punkten</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+
+<!-- Initialize Fontawesome with any icon {{< fa thumbs-up >}} -->
+<div class="hidden">
+<!-- Groundwork -->
+<p><span class="math display">
+\gdef\sub#1{_{\mathrm{#1}}}
+\gdef\unit#1{\mathrm{#1}}
+</span> <!-- Physical units --> <span class="math display">
+\gdef\celsius{\unit{°C}}
+\gdef\gram{\unit{g}}
+\gdef\joule{\unit{J}}
+\gdef\kelvin{\unit{K}}
+\gdef\kilogram{\unit{kg}}
+\gdef\liter{\unit{L}}
+\gdef\milliliter{\unit{mL}}
+\gdef\meter{\unit{m}}
+\gdef\mole{\unit{mol}}
+\gdef\newton{\unit{N}}
+\gdef\pascal{\unit{Pa}}
+</span> <!-- Prefixed units --> <span class="math display">
+\gdef\kilojoule{\unit{k}\joule}
+</span> <!-- Exponentiated units --> <span class="math display">
+\gdef\squaremeter{\meter^2}
+\gdef\cubicmeter{\meter^3}
+</span> <!-- Combined physical units --> <span class="math display">
+\gdef\newtonperkilogram{\frac{\newton}{\kilogram}}
+\gdef\joulepermole{\frac{\joule}{\mole}}
+\gdef\jouleperkilogram{\frac{\joule}{\kilogram}}
+\gdef\jouleperkelvin{\frac{\joule}{\kelvin}}
+\gdef\jouleperkilogramperkelvin{\frac{\joule}{\kilogram\,\kelvin}}
+\gdef\joulepermoleperkelvin{\frac{\joule}{\mole\,\kelvin}}
+\gdef\kilojouleperkilogram{\frac{\kilojoule}{\kilogram}}
+\gdef\kilojouleperkelvin{\frac{\kilojoule}{\kelvin}}
+\gdef\kilojouleperkilogram{\frac{\kilojoule}{\kilogram}}
+\gdef\kilojouleperkilogramperkelvin{\frac{\kilojoule}{\kilogram\,\kelvin}}
+\gdef\kilojoulepermoleperkelvin{\frac{\kilojoule}{\mole\,\kelvin}}
+</span></p>
+</div>
+<div class="hidden">
+
+</div>
+<div class="hidden">
+
+</div>
+<section id="arbeitsaufträge" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="arbeitsaufträge">Arbeitsaufträge</h2>
+<p>Bevor Du loslegst, rufe Dir die <a href="https://mgmssa.github.io/bio_expectations_and_requirements/">Anforderungen</a> für Biologieaufgaben in Stufe 10 ins Gedächtnis. Reiche die Antworten als digitales Dokument ein und verwende eine leserliche Schrift, falls Du ein handgeschriebenes Dokument einreichst. Stufe I ist auf E Niveau, Stufe II ist auf E/A Niveau, Stufe III ist komplett auf A Niveau angesiedelt.</p>
+<p>Die Grundpunktanzahl eines Arbeitsauftrages wird durch die Summe der Grundpunkte aller Aufgaben berechnet. Die Grundpunkte kannst Du nicht einsehen, weil sie für Dich bei der Wahl der Aufgaben keine Rolle spielen. Die Grundpunkte sind aber wichtig, weil die Benotungsstufen von ihnen abhängt.</p>
+<p>Keine Panik! Die Grundpunkte werden mit den Multiplikatoren <strong>1</strong> für Stufe I, <strong>2</strong> für Stufe II, und <strong>3</strong> für Stufe III, multipliziert. Du bekommst <em>diese</em> Punkte und nicht die Grundpunkte. Du vergleichst <em>diese</em> Punkte mit der Tabelle, um Deine Note einzuschätzen. Das heisst, weil Deine Punkte durch die Multiplikatoren gegangen sind, kannst Du mehr Punkte einfahren, als zum Erreichen einer Notenstufe “Sehr gut” notwendig ist.</p>
+<p>In den folgenden Aufgaben wird öfters die Standardenthalpie verwendet. Wie alle thermodynamischen Funktionen, ist auch die Enthalpie von anderen Grössen wie Temperatur, Druck, und andere abhängig und kann sich dadurch verändern. In den engen Grenzen, in denen sich lebende Systeme bewegen, ist es eine annehmbare und gute Näherung, die Enthalpie als konstant zu betrachten.</p>
+</section>
+<section id="stufe-i" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="stufe-i"><span class="header-section-number">1</span> Stufe I</h2>
+<section id="änderung-der-inneren-energie" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="änderung-der-inneren-energie"><span class="header-section-number">1.1</span> Änderung der inneren Energie</h3>
+<p>Wie kann die innere Energie eines Systems grundsätzlich geändert werden? Gib eine Gleichung dafür an und benenne die einzelnen Variablen mit ihren Einheiten.</p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 7 und maximal 7 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+</section>
+<section id="änderung-der-inneren-energie---isoliertes-system" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="änderung-der-inneren-energie---isoliertes-system"><span class="header-section-number">1.2</span> Änderung der inneren Energie - isoliertes System</h3>
+<p>Wie kann die innere Energie eines isolierten Systems geändert werden? Drücke das verbal als auch mathematisch aus.</p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 3 und maximal 3 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+</section>
+<section id="änderung-der-inneren-energie--geschlossenes-system" class="level3" data-number="1.3">
+<h3 data-number="1.3" class="anchored" data-anchor-id="änderung-der-inneren-energie--geschlossenes-system"><span class="header-section-number">1.3</span> Änderung der inneren Energie- geschlossenes System</h3>
+<p>Wie kann die innere Energie eines flexiblen und eines starren geschlossenen Systems geändert werden? Drücke dies mathematisch aus.</p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 4 und maximal 4 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+</section>
+<section id="teekessel-und-offener-topf" class="level3" data-number="1.4">
+<h3 data-number="1.4" class="anchored" data-anchor-id="teekessel-und-offener-topf"><span class="header-section-number">1.4</span> Teekessel und offener Topf</h3>
+<p>Beschreibe mit Deinen eigenen Worten, warum der Teekessel anfängt zu pfeifen. Warum passiert das, was das Pfeifen erzeugt nicht beim offenen Topf? Erkläre mithilfe der Thermodynamik und thermodynamischer Begriffe.</p>
+<div id="fig-closed-open-comparison" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-closed-open-comparison-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/closed_system_kettle.jpg" class="img-fluid figure-img"></p>
+<figcaption>Geschlossenes System</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/open_system_pot.jpg" class="img-fluid figure-img"></p>
+<figcaption>Offenes System</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-closed-open-comparison-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Abbildung&nbsp;1: Natürlich hat der Topf keine Pfeife; aber darum geht es nicht. Stell Dir vor sie hätte eine, wäre aber trotzdem offen.
+</figcaption>
+</figure>
+</div>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 6 und maximal 6 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+</section>
+<section id="beschreibung-der-enthalpie" class="level3" data-number="1.5">
+<h3 data-number="1.5" class="anchored" data-anchor-id="beschreibung-der-enthalpie"><span class="header-section-number">1.5</span> Beschreibung der Enthalpie</h3>
+<p>Was ist die Enthalpie? Beschreibe was sie ist und warum sie eingeführt werden musste?</p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 4 und maximal 4 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+</section>
+<section id="allgemeine-änderung-der-enthalpie" class="level3" data-number="1.6">
+<h3 data-number="1.6" class="anchored" data-anchor-id="allgemeine-änderung-der-enthalpie"><span class="header-section-number">1.6</span> Allgemeine Änderung der Enthalpie</h3>
+<p>Gib die Gleichung für die allgemeine Änderung der Enthalpie an. Benenne alle Variablen und gib deren Einheiten an.</p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 7 und maximal 7 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+</section>
+<section id="unterschied-der-änderung-zwischen-enthalpie-und-innerer-energie" class="level3" data-number="1.7">
+<h3 data-number="1.7" class="anchored" data-anchor-id="unterschied-der-änderung-zwischen-enthalpie-und-innerer-energie"><span class="header-section-number">1.7</span> Unterschied der Änderung zwischen Enthalpie und innerer Energie</h3>
+<p>Wie unterscheidet sich die Änderung der Enthalpie von der Änderung der inneren Energie bei konstantem Druck? Erkläre das anhand der Gleichung, die den Unterschied zeigt. Erläutere weiterhin, wann die Verwendung der Enthalpieänderung sich stark von der Änderung der inneren Energie unterscheidet.</p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 5 und maximal 6 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+</section>
+<section id="enthalpieänderung-bei-konstantem-druck" class="level3" data-number="1.8">
+<h3 data-number="1.8" class="anchored" data-anchor-id="enthalpieänderung-bei-konstantem-druck"><span class="header-section-number">1.8</span> Enthalpieänderung bei konstantem Druck</h3>
+<p>Gib die Gleichung wieder, die die Größe der Enthalpie bei konstantem Druck angibt. Benenne alle Variablen und gib ihre Einheiten an.</p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 6 und maximal 6 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+</section>
+<section id="reaktionsarten-bei-konstantem-druck" class="level3" data-number="1.9">
+<h3 data-number="1.9" class="anchored" data-anchor-id="reaktionsarten-bei-konstantem-druck"><span class="header-section-number">1.9</span> Reaktionsarten bei konstantem Druck</h3>
+<p>Betrachte ein offenes System unter konstantem Druck; also offen zur Atmosphäre. Welche Arten von Enthalpieänderungen sind grundsätzlich möglich? Beschreibe sowohl schriftlich als auch mathematisch die Art der Änderung. Verwende die Tabellenform mit Spaltennamen: <code>Delta H</code>, <code>Reaktionsart</code>, <code>Beschreibung</code>.</p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 7 und maximal 7 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+</section>
+<section id="definition-der-standardenthalpieänderung" class="level3" data-number="1.10">
+<h3 data-number="1.10" class="anchored" data-anchor-id="definition-der-standardenthalpieänderung"><span class="header-section-number">1.10</span> Definition der Standardenthalpieänderung</h3>
+<p>Wie ist die Standardenthalpie definiert?</p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 3 und maximal 5 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+</section>
+<section id="auf-masse-und-molanzahl-bezogene-standardenthalpieänderung" class="level3" data-number="1.11">
+<h3 data-number="1.11" class="anchored" data-anchor-id="auf-masse-und-molanzahl-bezogene-standardenthalpieänderung"><span class="header-section-number">1.11</span> Auf Masse und Molanzahl bezogene Standardenthalpieänderung</h3>
+<p>Was ist die spezifische und die molare Standardenthalpieänderung? Wie können beide zur Berechnung der Gesamtenthalpieänderung verwendet werden? Benenne alle Variablen und gib ihre Einheiten an.</p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 6 und maximal 8 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+</section>
+<section id="wärmekapazität" class="level3" data-number="1.12">
+<h3 data-number="1.12" class="anchored" data-anchor-id="wärmekapazität"><span class="header-section-number">1.12</span> Wärmekapazität</h3>
+<p>Beschreibe wie die Wärmeenergie mit der Wärmekapazität und der Temperaturzunahme zusammenhängt. Gib eine sprachliche als auch ein mathematische Definition an. Bei der mathematischen Definition benennst Du alle Variablen und gibst ihre Einheit an.</p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 8 und maximal 10 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+</section>
+<section id="auf-masse-und-molanzahl-bezogene-wärmekapazität" class="level3" data-number="1.13">
+<h3 data-number="1.13" class="anchored" data-anchor-id="auf-masse-und-molanzahl-bezogene-wärmekapazität"><span class="header-section-number">1.13</span> Auf Masse und Molanzahl bezogene Wärmekapazität</h3>
+<p>Was ist die spezifische und die molare Wärmekapazität? Wie können beide zur Berechnung der Gesamtwärmekapazität verwendet werden?</p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 10 und maximal 10 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+</section>
+</section>
+<section id="stufe-ii" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="stufe-ii"><span class="header-section-number">2</span> Stufe II</h2>
+<section id="heben-einer-masse" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="heben-einer-masse"><span class="header-section-number">2.1</span> Heben einer Masse</h3>
+<p>Du hebst eine Masse von <span class="math inline">m = 1\,\kilogram</span> um <span class="math inline">h = 10\,\meter</span>. Welche Energie brauchst Du, um dies zu bewältigen? Rechne mit der Erdbeschleunigung <span class="math inline">g = 10\,\newtonperkilogram</span>. Wem geht diese Energie verloren?</p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 10 und maximal 10 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Ergebnis: <span class="math inline">-100\,\joule</span>.</span></p>
+</section>
+<section id="schmelzen-von-wasser-i" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="schmelzen-von-wasser-i"><span class="header-section-number">2.2</span> Schmelzen von Wasser I</h3>
+<p>Du möchtest einen Kilogramm Wassereis bei <span class="math inline">25\,\celsius</span> komplett zu flüssigem Wasser schmelzen. Die Standardschmelzenthalpie von Wasser beträgt <span class="math inline">\Delta H^{\circ}_m = 333.55\;\kilojouleperkilogram</span></p>
+<ol type="a">
+<li>Welche Enthalpieänderung ist notwendig?</li>
+<li>Welcher Reaktionstyp liegt hier vor? Warum?</li>
+<li>Von wo nach wo fliesst Energie?</li>
+</ol>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 12 und maximal 12 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Ergebnis: a. <span class="math inline">333.55\,\kilojoule</span>, b. und c.&nbsp;musst Du selbst herausfinden.</span></p>
+</section>
+<section id="schmelzen-von-wasser-ii" class="level3" data-number="2.3">
+<h3 data-number="2.3" class="anchored" data-anchor-id="schmelzen-von-wasser-ii"><span class="header-section-number">2.3</span> Schmelzen von Wasser II</h3>
+<p>Du möchtest zehn Gramm Wassereis bei <span class="math inline">25\,\celsius</span> komplett zu flüssigem Wasser schmelzen. Die spezifische Standardschmelzenthalpie von Wasser beträgt <span class="math inline">\Delta H^{\circ}_m = 333.55\;\kilojouleperkilogram</span>.</p>
+<ol type="a">
+<li>Welche Enthalpieänderung ist notwendig?</li>
+<li>Von wo nach wo fliesst die Energie?</li>
+</ol>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 12 und maximal 12 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Ergebnis: a. <span class="math inline">3.33\,\kilojoule</span>; b. Das musst Du selbst herausfinden.</span></p>
+</section>
+<section id="verdampfen-von-wasser" class="level3" data-number="2.4">
+<h3 data-number="2.4" class="anchored" data-anchor-id="verdampfen-von-wasser"><span class="header-section-number">2.4</span> Verdampfen von Wasser</h3>
+<p>Du möchtest <span class="math inline">m = 8\,\gram</span> Wasser bei <span class="math inline">25\,\celsius</span> komplett in Dampf überführen. Die spezifische Standardschmelzenthalpie zum Verdampfen von Wasser beträgt <span class="math inline">\Delta H^{\circ}_m = 2257\;\kilojouleperkilogram</span></p>
+<ol type="a">
+<li>Welche Enthalpieänderung ist notwendig?</li>
+<li>Welcher Reaktionstyp liegt hier vor? Warum?</li>
+<li>Von wo nach wo fliesst die Energie?</li>
+</ol>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 12 und maximal 12 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Ergebnis: a. <span class="math inline">18\,\kilojoule</span>, b. und c.&nbsp;musst Du selbst herausfinden.</span></p>
+</section>
+<section id="erwärmen-von-wasser" class="level3" data-number="2.5">
+<h3 data-number="2.5" class="anchored" data-anchor-id="erwärmen-von-wasser"><span class="header-section-number">2.5</span> Erwärmen von Wasser</h3>
+<p>Du möchtest <span class="math inline">m = 15\,\gram</span> Wasser bei <span class="math inline">25\,\celsius</span> um einen Grad erwärmen. Die spezifische Wärmekapazität von Wasser <span class="math inline">C_{p,m} = 4200\;\jouleperkilogramperkelvin</span>.</p>
+<ol type="a">
+<li>Welche Enthalpieänderung ist notwendig?</li>
+<li>Welcher Reaktionstyp liegt hier vor? Warum?</li>
+<li>Von wo nach wo fliesst die Energie?</li>
+</ol>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 12 und maximal 12 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Ergebnis: a. <span class="math inline">63\,\joule</span>, b. und c.&nbsp;musst Du selbst herausfinden.</span></p>
+</section>
+<section id="abkühlen-von-wasser" class="level3" data-number="2.6">
+<h3 data-number="2.6" class="anchored" data-anchor-id="abkühlen-von-wasser"><span class="header-section-number">2.6</span> Abkühlen von Wasser</h3>
+<p>Du möchtest <span class="math inline">m = 9\,\gram</span> Wasser bei <span class="math inline">25\,\celsius</span> um einen Grad kühlen. Die spezifische Wärmekapazität von Wasser <span class="math inline">C_{p,m} = 4200\;\jouleperkilogramperkelvin</span>.</p>
+<ol type="a">
+<li>Welche Enthalpieänderung ist notwendig?</li>
+<li>Welcher Reaktionstyp liegt hier vor? Warum?</li>
+<li>Von wo nach wo fliesst die benötigte Energie?</li>
+</ol>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 12 und maximal 12 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Ergebnis: a. <span class="math inline">-38\,\joule</span>, b. und c.&nbsp;musst Du selbst herausfinden.</span></p>
+</section>
+</section>
+<section id="stufe-iii" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="stufe-iii"><span class="header-section-number">3</span> Stufe III</h2>
+<section id="zuckerverbrennung" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="zuckerverbrennung"><span class="header-section-number">3.1</span> Zuckerverbrennung</h3>
+<p>Bei einer Verbrennung von Glucose unter freiem Himmel und bei konstantem Druck <span class="math inline">p = 101325\;\pascal</span> entsteht ein Liter <span class="math inline">1\,\liter</span> des Gases <span class="math inline">\ce{CO2}</span>. Du brauchst hier, keine Antwortsätze aufzuschreiben aber achte auf die Einheiten!</p>
+<ol type="a">
+<li>Was ist dabei der Unterschied zwischen der Abnahme der Enthalpie und der inneren Energie?</li>
+<li>Vergleiche das mit der dabei enstandenen Enthalpieänderung von <span class="math inline">\Delta H \approx -21\,\kilojoule</span>; zum Beispiel als Prozentwert.</li>
+<li>Welcher Reaktionstyp liegt hier vor? Warum?</li>
+<li>Wo geht die Differenz dieser beiden Energien hin?</li>
+<li>Berechne wie die Änderung der inneren Energie gewesen sein muss, damit dieser Unterschied herauskommt?</li>
+</ol>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 33 und maximal 33 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Ergebnis: a. <span class="math inline">101\,\kilojoule</span>, b. <span class="math inline">0.5\,\%</span>, c.&nbsp;und d.&nbsp;musst Du herausfinden.</span></p>
+</section>
+<section id="geschlossen-und-offen" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="geschlossen-und-offen"><span class="header-section-number">3.2</span> Geschlossen und offen</h3>
+<p>Du erwärmst <span class="math inline">m = 23\,\gram</span> Wasser auf eine Endtemperatur <span class="math inline">T\sub{Ende} = 343\,\kelvin</span> in einem starren geschlossenem System. Die aufgewendete Energie ist <span class="math inline">Q = 4347\,\joule</span>. Die spezifische Wärmekapazität von Wasser ist <span class="math inline">C_{p,m} = 4200\,\jouleperkilogramperkelvin</span>. Du brauchst hierbei, keine Antwortsätze aufzuführen.</p>
+<ol type="a">
+<li>Was war die ursprüngliche Temperatur des Wassers?</li>
+<li>Was ist die Änderung der inneren Energie?</li>
+<li>Was ist die Änderung der Enthalpie?</li>
+<li>Welcher Reaktionstyp liegt hier vor? Warum?</li>
+<li>Woher kommt die benötigte Energie?</li>
+<li>Wieviel Wasser würde verdampfen, wenn die aufgewendete Energie komplett in die Verdunstung kanalisiert werden könnte? Die spezifische Standardenthalpie der Verdampfung liegt bei <span class="math inline">\Delta H^{\circ}_{\mathrm{vap},m} = 2257\,\kilojouleperkilogram</span>.</li>
+<li>Angenommen Du wiederholst das Experiment in einem offenen Gefäss unter Atmosphärendruck <span class="math inline">p = 101325\,\pascal</span>. Du erwärmst das Wasser aber findest heraus, dass etwa <span class="math inline">1.0\,\gram</span> Wasser am Ende verdunstet sind. Der Wasserdampf nimmt am Ende ein Volumen von <span class="math inline">V\sub{Ende} = 1.7\,\liter</span> ein. Berechne die Änderung der Enthalpie und der inneren Energie in diesem neuen Szenario.</li>
+</ol>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Du kannst 57 und maximal 57 Aufgabenpunkte bekommen. Punkte werden für Aussagen nur unter Einbeziehung und Beachtung von Fachsprache vergeben</span></p>
+<p><span class="light-content" data-fg="purple" style="color: #AF51E7;">Ergebnis: a. <span class="math inline">298\,\kelvin</span>, b., c., d., e. musst Du selbst herausfinden, f.&nbsp;<span class="math inline">2\,\gram</span>, g. <span class="math inline">\Delta H = 4160\,\joule</span>, <span class="math inline">\Delta U = 6242\,\joule</span>.</span></p>
+</section>
+</section>
+<section id="punkte" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="punkte">Punkte</h2>
+<p>Die mögliche Gesamtpunktanzahl ohne Stufenmultiplikatoren ist 141. Für die Benotung ist nur diese entscheidend.</p>
+<section id="gesamtpunkte-pro-stufe" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="gesamtpunkte-pro-stufe">Gesamtpunkte pro Stufe</h3>
+<p>Mit Multiplikatoren ergeben sich für die unterschiedlichen Anforderungsstufen folgende maximale Punktanzahlen:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="rvclawkdom" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#rvclawkdom table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#rvclawkdom thead, #rvclawkdom tbody, #rvclawkdom tfoot, #rvclawkdom tr, #rvclawkdom td, #rvclawkdom th {
+  border-style: none;
+}
+
+#rvclawkdom p {
+  margin: 0;
+  padding: 0;
+}
+
+#rvclawkdom .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #181817;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #F4F4E7;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#rvclawkdom .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#rvclawkdom .gt_title {
+  color: #181817;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #F4F4E7;
+  border-bottom-width: 0;
+}
+
+#rvclawkdom .gt_subtitle {
+  color: #181817;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #F4F4E7;
+  border-top-width: 0;
+}
+
+#rvclawkdom .gt_heading {
+  background-color: #F4F4E7;
+  text-align: center;
+  border-bottom-color: #F4F4E7;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#rvclawkdom .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#rvclawkdom .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#rvclawkdom .gt_col_heading {
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#rvclawkdom .gt_column_spanner_outer {
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#rvclawkdom .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#rvclawkdom .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#rvclawkdom .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#rvclawkdom .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#rvclawkdom .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#rvclawkdom .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#rvclawkdom .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#rvclawkdom .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#rvclawkdom .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#rvclawkdom .gt_stub {
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#rvclawkdom .gt_stub_row_group {
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#rvclawkdom .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#rvclawkdom .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#rvclawkdom .gt_summary_row {
+  color: #181817;
+  background-color: #F4F4E7;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#rvclawkdom .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#rvclawkdom .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#rvclawkdom .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#rvclawkdom .gt_grand_summary_row {
+  color: #181817;
+  background-color: #F4F4E7;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#rvclawkdom .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#rvclawkdom .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#rvclawkdom .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#rvclawkdom .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#rvclawkdom .gt_footnotes {
+  color: #181817;
+  background-color: #F4F4E7;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#rvclawkdom .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#rvclawkdom .gt_sourcenotes {
+  color: #181817;
+  background-color: #F4F4E7;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#rvclawkdom .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#rvclawkdom .gt_left {
+  text-align: left;
+}
+
+#rvclawkdom .gt_center {
+  text-align: center;
+}
+
+#rvclawkdom .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#rvclawkdom .gt_font_normal {
+  font-weight: normal;
+}
+
+#rvclawkdom .gt_font_bold {
+  font-weight: bold;
+}
+
+#rvclawkdom .gt_font_italic {
+  font-style: italic;
+}
+
+#rvclawkdom .gt_super {
+  font-size: 65%;
+}
+
+#rvclawkdom .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#rvclawkdom .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#rvclawkdom .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#rvclawkdom .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#rvclawkdom .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#rvclawkdom .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#rvclawkdom .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#rvclawkdom .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#rvclawkdom div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_col_headings header">
+<th id="level" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Stufe</th>
+<th id="level_points" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Gesamtpunkte</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_right" headers="level">1</td>
+<td class="gt_row gt_right" headers="level_points">76</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="level">2</td>
+<td class="gt_row gt_right" headers="level_points">70</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="level">3</td>
+<td class="gt_row gt_right" headers="level_points">90</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p>Zusammen ergibt das 236. Aufgaben aus Stufe III bringen durch den Multiplikator mehr Punkte aber sind anspruchsvoller. Löst Du nur Aufgaben aus Stufe I und II, so musst Du mehr lösen aber dafür sind die Aufgaben leichter. Setze nicht immer alles auf eine Karte; mische die unterschiedlichen Stufen.</p>
+</section>
+<section id="punkte-pro-aufgabe" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="punkte-pro-aufgabe">Punkte pro Aufgabe</h3>
+<p>Die Punkte pro Aufgabe entnimmst Dun der folgenden Tabelle:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="qtlkketpao" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#qtlkketpao table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#qtlkketpao thead, #qtlkketpao tbody, #qtlkketpao tfoot, #qtlkketpao tr, #qtlkketpao td, #qtlkketpao th {
+  border-style: none;
+}
+
+#qtlkketpao p {
+  margin: 0;
+  padding: 0;
+}
+
+#qtlkketpao .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #181817;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #F4F4E7;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#qtlkketpao .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#qtlkketpao .gt_title {
+  color: #181817;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #F4F4E7;
+  border-bottom-width: 0;
+}
+
+#qtlkketpao .gt_subtitle {
+  color: #181817;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #F4F4E7;
+  border-top-width: 0;
+}
+
+#qtlkketpao .gt_heading {
+  background-color: #F4F4E7;
+  text-align: center;
+  border-bottom-color: #F4F4E7;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#qtlkketpao .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qtlkketpao .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#qtlkketpao .gt_col_heading {
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#qtlkketpao .gt_column_spanner_outer {
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#qtlkketpao .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#qtlkketpao .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#qtlkketpao .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#qtlkketpao .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#qtlkketpao .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#qtlkketpao .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#qtlkketpao .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#qtlkketpao .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#qtlkketpao .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#qtlkketpao .gt_stub {
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qtlkketpao .gt_stub_row_group {
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#qtlkketpao .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#qtlkketpao .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#qtlkketpao .gt_summary_row {
+  color: #181817;
+  background-color: #F4F4E7;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qtlkketpao .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#qtlkketpao .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#qtlkketpao .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qtlkketpao .gt_grand_summary_row {
+  color: #181817;
+  background-color: #F4F4E7;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qtlkketpao .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#qtlkketpao .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qtlkketpao .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#qtlkketpao .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#qtlkketpao .gt_footnotes {
+  color: #181817;
+  background-color: #F4F4E7;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#qtlkketpao .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qtlkketpao .gt_sourcenotes {
+  color: #181817;
+  background-color: #F4F4E7;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#qtlkketpao .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#qtlkketpao .gt_left {
+  text-align: left;
+}
+
+#qtlkketpao .gt_center {
+  text-align: center;
+}
+
+#qtlkketpao .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#qtlkketpao .gt_font_normal {
+  font-weight: normal;
+}
+
+#qtlkketpao .gt_font_bold {
+  font-weight: bold;
+}
+
+#qtlkketpao .gt_font_italic {
+  font-style: italic;
+}
+
+#qtlkketpao .gt_super {
+  font-size: 65%;
+}
+
+#qtlkketpao .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#qtlkketpao .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#qtlkketpao .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#qtlkketpao .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#qtlkketpao .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#qtlkketpao .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#qtlkketpao .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#qtlkketpao .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#qtlkketpao div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_col_headings header">
+<th id="task" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Aufgabe</th>
+<th id="level_points" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Punkte</th>
+<th id="max_level_points" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Maximale Punkte</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="gt_group_heading_row odd">
+<th colspan="3" id="Stufe 1" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Stufe 1</th>
+</tr>
+<tr class="gt_row_group_first even">
+<td class="gt_row gt_left" headers="Stufe 1  task">Änderung der inneren Energie</td>
+<td class="gt_row gt_right" headers="Stufe 1  level_points">7</td>
+<td class="gt_row gt_right" headers="Stufe 1  max_level_points">7</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Stufe 1  task">Änderung der inneren Energie - isoliertes System</td>
+<td class="gt_row gt_right" headers="Stufe 1  level_points">3</td>
+<td class="gt_row gt_right" headers="Stufe 1  max_level_points">3</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Stufe 1  task">Änderung der inneren Energie- geschlossenes System</td>
+<td class="gt_row gt_right" headers="Stufe 1  level_points">4</td>
+<td class="gt_row gt_right" headers="Stufe 1  max_level_points">4</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Stufe 1  task">Teekessel und offener Topf</td>
+<td class="gt_row gt_right" headers="Stufe 1  level_points">6</td>
+<td class="gt_row gt_right" headers="Stufe 1  max_level_points">6</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Stufe 1  task">Beschreibung der Enthalpie</td>
+<td class="gt_row gt_right" headers="Stufe 1  level_points">4</td>
+<td class="gt_row gt_right" headers="Stufe 1  max_level_points">4</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Stufe 1  task">Allgemeine Änderung der Enthalpie</td>
+<td class="gt_row gt_right" headers="Stufe 1  level_points">7</td>
+<td class="gt_row gt_right" headers="Stufe 1  max_level_points">7</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Stufe 1  task">Unterschied der Änderung zwischen Enthalpie und innerer Energie</td>
+<td class="gt_row gt_right" headers="Stufe 1  level_points">5</td>
+<td class="gt_row gt_right" headers="Stufe 1  max_level_points">6</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Stufe 1  task">Enthalpieänderung bei konstantem Druck</td>
+<td class="gt_row gt_right" headers="Stufe 1  level_points">6</td>
+<td class="gt_row gt_right" headers="Stufe 1  max_level_points">6</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Stufe 1  task">Reaktionsarten bei konstantem Druck</td>
+<td class="gt_row gt_right" headers="Stufe 1  level_points">7</td>
+<td class="gt_row gt_right" headers="Stufe 1  max_level_points">7</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Stufe 1  task">Definition der Standardenthalpieänderung</td>
+<td class="gt_row gt_right" headers="Stufe 1  level_points">3</td>
+<td class="gt_row gt_right" headers="Stufe 1  max_level_points">5</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Stufe 1  task">Auf Masse und Molanzahl bezogene Standardenthalpieänderung</td>
+<td class="gt_row gt_right" headers="Stufe 1  level_points">6</td>
+<td class="gt_row gt_right" headers="Stufe 1  max_level_points">8</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Stufe 1  task">Wärmekapazität</td>
+<td class="gt_row gt_right" headers="Stufe 1  level_points">8</td>
+<td class="gt_row gt_right" headers="Stufe 1  max_level_points">10</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Stufe 1  task">Auf Masse und Molanzahl bezogene Wärmekapazität</td>
+<td class="gt_row gt_right" headers="Stufe 1  level_points">10</td>
+<td class="gt_row gt_right" headers="Stufe 1  max_level_points">10</td>
+</tr>
+<tr class="gt_group_heading_row odd">
+<th colspan="3" id="Stufe 2" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Stufe 2</th>
+</tr>
+<tr class="gt_row_group_first even">
+<td class="gt_row gt_left" headers="Stufe 2  task">Heben einer Masse</td>
+<td class="gt_row gt_right" headers="Stufe 2  level_points">10</td>
+<td class="gt_row gt_right" headers="Stufe 2  max_level_points">10</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Stufe 2  task">Schmelzen von Wasser I</td>
+<td class="gt_row gt_right" headers="Stufe 2  level_points">12</td>
+<td class="gt_row gt_right" headers="Stufe 2  max_level_points">12</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Stufe 2  task">Schmelzen von Wasser II</td>
+<td class="gt_row gt_right" headers="Stufe 2  level_points">12</td>
+<td class="gt_row gt_right" headers="Stufe 2  max_level_points">12</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Stufe 2  task">Verdampfen von Wasser</td>
+<td class="gt_row gt_right" headers="Stufe 2  level_points">12</td>
+<td class="gt_row gt_right" headers="Stufe 2  max_level_points">12</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Stufe 2  task">Erwärmen von Wasser</td>
+<td class="gt_row gt_right" headers="Stufe 2  level_points">12</td>
+<td class="gt_row gt_right" headers="Stufe 2  max_level_points">12</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_left" headers="Stufe 2  task">Abkühlen von Wasser</td>
+<td class="gt_row gt_right" headers="Stufe 2  level_points">12</td>
+<td class="gt_row gt_right" headers="Stufe 2  max_level_points">12</td>
+</tr>
+<tr class="gt_group_heading_row even">
+<th colspan="3" id="Stufe 3" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Stufe 3</th>
+</tr>
+<tr class="gt_row_group_first odd">
+<td class="gt_row gt_left" headers="Stufe 3  task">Zuckerverbrennung</td>
+<td class="gt_row gt_right" headers="Stufe 3  level_points">33</td>
+<td class="gt_row gt_right" headers="Stufe 3  max_level_points">33</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_left" headers="Stufe 3  task">Geschlossen und offen</td>
+<td class="gt_row gt_right" headers="Stufe 3  level_points">57</td>
+<td class="gt_row gt_right" headers="Stufe 3  max_level_points">57</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="benotung-nach-punkten" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="benotung-nach-punkten">Benotung nach Punkten</h3>
+<p>Die genaue Verteilung der Prozent- und Punktbereiche mit den dazugehörigen Noten entnimmst Du der folgenden Tabelle.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="khgwkotptm" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#khgwkotptm table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#khgwkotptm thead, #khgwkotptm tbody, #khgwkotptm tfoot, #khgwkotptm tr, #khgwkotptm td, #khgwkotptm th {
+  border-style: none;
+}
+
+#khgwkotptm p {
+  margin: 0;
+  padding: 0;
+}
+
+#khgwkotptm .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #181817;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #F4F4E7;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#khgwkotptm .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#khgwkotptm .gt_title {
+  color: #181817;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #F4F4E7;
+  border-bottom-width: 0;
+}
+
+#khgwkotptm .gt_subtitle {
+  color: #181817;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #F4F4E7;
+  border-top-width: 0;
+}
+
+#khgwkotptm .gt_heading {
+  background-color: #F4F4E7;
+  text-align: center;
+  border-bottom-color: #F4F4E7;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#khgwkotptm .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#khgwkotptm .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#khgwkotptm .gt_col_heading {
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#khgwkotptm .gt_column_spanner_outer {
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#khgwkotptm .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#khgwkotptm .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#khgwkotptm .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#khgwkotptm .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#khgwkotptm .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#khgwkotptm .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#khgwkotptm .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#khgwkotptm .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#khgwkotptm .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#khgwkotptm .gt_stub {
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#khgwkotptm .gt_stub_row_group {
+  color: #181817;
+  background-color: #F4F4E7;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#khgwkotptm .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#khgwkotptm .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#khgwkotptm .gt_summary_row {
+  color: #181817;
+  background-color: #F4F4E7;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#khgwkotptm .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#khgwkotptm .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#khgwkotptm .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#khgwkotptm .gt_grand_summary_row {
+  color: #181817;
+  background-color: #F4F4E7;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#khgwkotptm .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#khgwkotptm .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#khgwkotptm .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#khgwkotptm .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#khgwkotptm .gt_footnotes {
+  color: #181817;
+  background-color: #F4F4E7;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#khgwkotptm .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#khgwkotptm .gt_sourcenotes {
+  color: #181817;
+  background-color: #F4F4E7;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#khgwkotptm .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#khgwkotptm .gt_left {
+  text-align: left;
+}
+
+#khgwkotptm .gt_center {
+  text-align: center;
+}
+
+#khgwkotptm .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#khgwkotptm .gt_font_normal {
+  font-weight: normal;
+}
+
+#khgwkotptm .gt_font_bold {
+  font-weight: bold;
+}
+
+#khgwkotptm .gt_font_italic {
+  font-style: italic;
+}
+
+#khgwkotptm .gt_super {
+  font-size: 65%;
+}
+
+#khgwkotptm .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#khgwkotptm .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#khgwkotptm .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#khgwkotptm .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#khgwkotptm .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#khgwkotptm .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#khgwkotptm .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#khgwkotptm .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#khgwkotptm div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
+<thead>
+<tr class="gt_col_headings header">
+<th id="percent" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Prozentbereich, %</th>
+<th id="points" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col">Punktebereich</th>
+<th id="grade_points" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Notenpunkte</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="gt_group_heading_row odd">
+<th colspan="3" id="Sehr gut" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Sehr gut</th>
+</tr>
+<tr class="gt_row_group_first even">
+<td class="gt_row gt_center" headers="Sehr gut  percent">97 bis 100</td>
+<td class="gt_row gt_center" headers="Sehr gut  points">137 bis 141</td>
+<td class="gt_row gt_right" headers="Sehr gut  grade_points">15</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="Sehr gut  percent">93 bis 96</td>
+<td class="gt_row gt_center" headers="Sehr gut  points">131 bis 136</td>
+<td class="gt_row gt_right" headers="Sehr gut  grade_points">14</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="Sehr gut  percent">90 bis 92</td>
+<td class="gt_row gt_center" headers="Sehr gut  points">127 bis 130</td>
+<td class="gt_row gt_right" headers="Sehr gut  grade_points">13</td>
+</tr>
+<tr class="gt_group_heading_row odd">
+<th colspan="3" id="Gut" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Gut</th>
+</tr>
+<tr class="gt_row_group_first even">
+<td class="gt_row gt_center" headers="Gut  percent">85 bis 89</td>
+<td class="gt_row gt_center" headers="Gut  points">120 bis 126</td>
+<td class="gt_row gt_right" headers="Gut  grade_points">12</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="Gut  percent">80 bis 84</td>
+<td class="gt_row gt_center" headers="Gut  points">113 bis 119</td>
+<td class="gt_row gt_right" headers="Gut  grade_points">11</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="Gut  percent">75 bis 79</td>
+<td class="gt_row gt_center" headers="Gut  points">106 bis 112</td>
+<td class="gt_row gt_right" headers="Gut  grade_points">10</td>
+</tr>
+<tr class="gt_group_heading_row odd">
+<th colspan="3" id="Befriedigend" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Befriedigend</th>
+</tr>
+<tr class="gt_row_group_first even">
+<td class="gt_row gt_center" headers="Befriedigend  percent">70 bis 74</td>
+<td class="gt_row gt_center" headers="Befriedigend  points">99 bis 105</td>
+<td class="gt_row gt_right" headers="Befriedigend  grade_points">9</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="Befriedigend  percent">65 bis 69</td>
+<td class="gt_row gt_center" headers="Befriedigend  points">92 bis 98</td>
+<td class="gt_row gt_right" headers="Befriedigend  grade_points">8</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="Befriedigend  percent">60 bis 64</td>
+<td class="gt_row gt_center" headers="Befriedigend  points">85 bis 91</td>
+<td class="gt_row gt_right" headers="Befriedigend  grade_points">7</td>
+</tr>
+<tr class="gt_group_heading_row odd">
+<th colspan="3" id="Ausreichend" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Ausreichend</th>
+</tr>
+<tr class="gt_row_group_first even">
+<td class="gt_row gt_center" headers="Ausreichend  percent">55 bis 59</td>
+<td class="gt_row gt_center" headers="Ausreichend  points">78 bis 84</td>
+<td class="gt_row gt_right" headers="Ausreichend  grade_points">6</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="Ausreichend  percent">50 bis 54</td>
+<td class="gt_row gt_center" headers="Ausreichend  points">70 bis 77</td>
+<td class="gt_row gt_right" headers="Ausreichend  grade_points">5</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="Ausreichend  percent">45 bis 49</td>
+<td class="gt_row gt_center" headers="Ausreichend  points">63 bis 70</td>
+<td class="gt_row gt_right" headers="Ausreichend  grade_points">4</td>
+</tr>
+<tr class="gt_group_heading_row odd">
+<th colspan="3" id="Mangelhaft" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Mangelhaft</th>
+</tr>
+<tr class="gt_row_group_first even">
+<td class="gt_row gt_center" headers="Mangelhaft  percent">38 bis 44</td>
+<td class="gt_row gt_center" headers="Mangelhaft  points">54 bis 63</td>
+<td class="gt_row gt_right" headers="Mangelhaft  grade_points">3</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_center" headers="Mangelhaft  percent">32 bis 37</td>
+<td class="gt_row gt_center" headers="Mangelhaft  points">45 bis 53</td>
+<td class="gt_row gt_right" headers="Mangelhaft  grade_points">2</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_center" headers="Mangelhaft  percent">25 bis 31</td>
+<td class="gt_row gt_center" headers="Mangelhaft  points">35 bis 44</td>
+<td class="gt_row gt_right" headers="Mangelhaft  grade_points">1</td>
+</tr>
+<tr class="gt_group_heading_row odd">
+<th colspan="3" id="Ungenügend" class="gt_group_heading" data-quarto-table-cell-role="th" scope="colgroup">Ungenügend</th>
+</tr>
+<tr class="gt_row_group_first even">
+<td class="gt_row gt_center" headers="Ungenügend  percent">0 bis 25</td>
+<td class="gt_row gt_center" headers="Ungenügend  points">0 bis 36</td>
+<td class="gt_row gt_right" headers="Ungenügend  grade_points">0</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Kopiert");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Kopiert");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
